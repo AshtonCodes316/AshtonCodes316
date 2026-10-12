@@ -1,3 +1,5 @@
+![Ashton Simmons — AI orchestration, automation, and software](assets/portfolio-banner.svg)
+
 <div align="center">
 
 # ASHTON SIMMONS
