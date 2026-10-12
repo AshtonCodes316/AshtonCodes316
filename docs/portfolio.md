@@ -17,6 +17,12 @@
 | **ApplyForge** | Local-first application workflow tools | [Explore](applyforge.md) |
 | **Merriwisp** | Additional project under review | [Explore](merriwisp.md) |
 
+## How to evaluate this portfolio
+
+- **[Engineering evidence and demo readiness](evidence.md):** what has been documented, what is deferred, and what proof is still needed.
+- **[Visual engineering workflow](../assets/build-process.svg):** the development process behind these projects.
+- **[Main profile](../README.md):** project summaries, technical interests, and contact direction.
+
 ## What these projects demonstrate
 
 **Systems thinking:** Defining roles, states, boundaries, and expected behavior before adding automation.
