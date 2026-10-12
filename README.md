@@ -136,7 +136,7 @@ I'm interested in **remote opportunities** spanning AI implementation, automatio
 **GitHub:** [github.com/AshtonCodes316](https://github.com/AshtonCodes316)  
 **Project case studies:** [Six-project portfolio](docs/portfolio.md)  
 **Master Key deep dive:** [Architecture, governance and current limits](docs/master-key.md)  
-**Engineering evidence:** [Evidence and demo readiness index](docs/evidence.md)
+**Engineering evidence:** [Evidence index](docs/evidence.md) · [Runnable MK governance example](examples/mk-governance/README.md)
 
 <div align="center">
 
