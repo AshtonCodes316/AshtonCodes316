@@ -33,7 +33,7 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 > **Portfolio transparency:** These projects are in different stages of development. Their source repositories are currently private. The descriptions below distinguish implemented checkpoints from plans; no production deployments are implied.
 
-### 🧠 THE MASTER KEY — AI orchestration & governance
+### 🧠 [THE MASTER KEY — AI orchestration & governance](docs/master-key.md)
 
 **Founder-directed AI operations and command-center architecture.**
 
@@ -47,7 +47,7 @@ A system designed to coordinate AI roles, models, tools, missions, approvals, an
 
 ---
 
-### 💸 TipFlow — financial software for tipped workers
+### 💸 [TipFlow — financial software for tipped workers](docs/tipflow.md)
 
 **A financial operating-system concept for people who earn tips.**
 
@@ -59,7 +59,7 @@ Explores software and workflows designed around the financial realities of tippe
 
 ---
 
-### 📈 Bubba Bucks — quantitative research infrastructure
+### 📈 [Bubba Bucks — quantitative research infrastructure](docs/bubba-bucks.md)
 
 **AI-assisted quantitative research and market-data infrastructure.**
 
@@ -73,7 +73,7 @@ Documented research workflows include universes/watchlists, historical data requ
 
 ---
 
-### 🏆 TourneyNest / TournamentOS — sports-family planning
+### 🏆 [TourneyNest / TournamentOS — sports-family planning](docs/tourneynest.md)
 
 **A family-execution app concept for youth and travel sports.**
 
@@ -85,7 +85,7 @@ Designed around the real-world loop: **Schedule → Review → Prepare → Pack 
 
 ---
 
-### 🧰 ApplyForge — local-first job application copilot
+### 🧰 [ApplyForge — local-first job application copilot](docs/applyforge.md)
 
 **Tools for understanding opportunities and managing the application process.**
 
@@ -97,7 +97,7 @@ Explores job analysis, tailored application workflows, and opportunity tracking 
 
 ---
 
-### ✨ Merriwisp — upcoming project showcase
+### ✨ [Merriwisp — upcoming project showcase](docs/merriwisp.md)
 
 A separate project in my development portfolio. A verified description and visuals will follow an implementation review.
 
