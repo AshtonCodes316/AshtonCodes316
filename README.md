@@ -134,7 +134,8 @@ I care about the work behind the demo: readable documentation, meaningful checkp
 I'm interested in **remote opportunities** spanning AI implementation, automation, technical solutions, and software/product development.
 
 **GitHub:** [github.com/AshtonCodes316](https://github.com/AshtonCodes316)  
-**Project case studies:** Public demos and technical walkthroughs are being prepared.
+**Project case studies:** [Six-project portfolio](docs/portfolio.md)  
+**Engineering evidence:** [Evidence and demo readiness index](docs/evidence.md)
 
 <div align="center">
 
