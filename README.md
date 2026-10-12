@@ -11,6 +11,8 @@
 
 **AI systems. Useful software. Thoughtful architecture.**
 
+[**PROJECT PORTFOLIO →**](docs/portfolio.md) · [**GITHUB PROFILE →**](https://github.com/AshtonCodes316)
+
 </div>
 
 ---
@@ -26,6 +28,8 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 > **My philosophy:** Make the system ambitious. Make the claims precise. Make the results verifiable.
 
 ## 🚀 Featured projects
+
+**Explore the work:** [Portfolio overview](docs/portfolio.md) · [Project development status](#-featured-projects)
 
 > **Portfolio transparency:** These projects are in different stages of development. Their source repositories are currently private. The descriptions below distinguish implemented checkpoints from plans; no production deployments are implied.
 
