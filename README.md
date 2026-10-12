@@ -11,7 +11,7 @@
 [![Focus](https://img.shields.io/badge/FOCUS-AI_ORCHESTRATION-2563eb?style=for-the-badge)](#-the-master-key--ai-orchestration--governance)
 [![Method](https://img.shields.io/badge/BUILD-TEST_%E2%86%92_VERIFY-059669?style=for-the-badge)](#-how-i-build)
 
-**AI systems. Useful software. Thoughtful architecture.**
+**Designing human-governed AI workflows and practical software — with evidence before claims.**
 
 [**PROJECT PORTFOLIO →**](docs/portfolio.md) · [**GITHUB PROFILE →**](https://github.com/AshtonCodes316)
 
@@ -135,6 +135,7 @@ I'm interested in **remote opportunities** spanning AI implementation, automatio
 
 **GitHub:** [github.com/AshtonCodes316](https://github.com/AshtonCodes316)  
 **Project case studies:** [Six-project portfolio](docs/portfolio.md)  
+**Master Key deep dive:** [Architecture, governance and current limits](docs/master-key.md)  
 **Engineering evidence:** [Evidence and demo readiness index](docs/evidence.md)
 
 <div align="center">
