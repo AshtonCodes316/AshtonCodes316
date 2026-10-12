@@ -119,6 +119,9 @@ A separate project in my development portfolio. A verified description and visua
 
 ## 🔍 How I build
 
+![Engineering workflow: idea, design, build, verify, iterate](assets/build-process.svg)
+
+
 ```text
 IDEA → DEFINE THE WORKFLOW → DESIGN THE BOUNDARIES
      → IMPLEMENT → TEST → VERIFY → DOCUMENT → ITERATE
