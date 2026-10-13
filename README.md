@@ -125,7 +125,7 @@ A second browser-only prototype: fictional onboarding intake, readiness validati
 
 [**TRY THE IMPLEMENTATION DASHBOARD →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [How it works and limitations](docs/implementation-dashboard/README.md)
 
-A third browser-only portfolio prototype for fictional customer implementation milestones, blockers, owner assignment, and simulated go-live approvals. **Live deployment and functionality are not yet verified.**
+A third browser-only portfolio prototype for fictional customer implementation milestones, blockers, owner assignment, and simulated go-live approvals. **Founder-reported smoke test (Oct. 12, 2026):** The live dashboard opened and the guided milestone and approval flow worked. No independent browser verification was performed.
 
 ## 💼 AI automation for real business workflows
 
