@@ -22,6 +22,10 @@ I combine business operations and customer-facing management experience with han
 
 [**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; the founder reported the live page and guided workflow worked on October 12, 2026; independent testing remains pending.
 
+## Implementation Dashboard — third interactive example
+
+[**Try the Implementation Dashboard →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [Demo instructions and limitations](implementation-dashboard/README.md). Simulates fictional customer milestones, blockers, and go-live review. **Live deployment and functionality are pending verification.**
+
 ## Start here: 3 useful links
 
 | Want to see… | Open |
