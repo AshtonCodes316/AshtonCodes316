@@ -10,6 +10,10 @@ I combine business operations and customer-facing management experience with han
 
 **Best-fit opportunities:** AI implementation coordinator / specialist, automation operations, technical customer success, solutions support, and junior technical operations roles. These are target roles, **not previous job titles or credentials**.
 
+## Business impact and use cases
+
+[Explore practical AI automation use cases →](business-automation.md) — proposed workflows for customer support, operations, data quality, and application tracking, with safeguards and measurable success criteria. These are examples, not deployed customer results.
+
 ## Start here: 3 useful links
 
 | Want to see… | Open |
