@@ -13,7 +13,7 @@
 
 **Designing human-governed AI workflows and practical software — with evidence before claims.**
 
-[**RECRUITER QUICK START →**](docs/recruiter.md) · [**PROJECT STATUS →**](docs/project-status.md) · [**FULL PORTFOLIO →**](docs/portfolio.md)
+[**🌐 LIVE PORTFOLIO WEBSITE →**](https://ashtoncodes316.github.io/AshtonCodes316/) · [**RECRUITER QUICK START →**](docs/recruiter.md) · [**PROJECT STATUS →**](docs/project-status.md) · [**FULL PORTFOLIO →**](docs/portfolio.md)
 
 </div>
 
@@ -108,6 +108,12 @@ Explores job analysis, tailored application workflows, and opportunity tracking 
 A separate project in my development portfolio. A verified description and visuals will follow an implementation review.
 
 **Status:** Private repository; public overview pending.
+
+## 🌐 Recruiter-ready interactive portfolio
+
+[**VISIT THE PORTFOLIO WEBSITE →**](https://ashtoncodes316.github.io/AshtonCodes316/) · [Application-ready project descriptions](docs/application-kit.md) · [Real screenshot capture guide](docs/screenshot-guide.md)
+
+A polished landing page featuring three founder-tested, browser-only workflow simulations. The new landing page's deployment has not yet been independently checked; visual previews are illustrations, not captured screenshots.
 
 ## 🧪 Try an interactive automation prototype
 
