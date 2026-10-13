@@ -4,7 +4,7 @@ A browser-only, deterministic simulation of customer implementation milestone tr
 
 **Expected GitHub Pages link:** https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/
 
-The source is committed to the public profile repository's `docs` folder. GitHub Pages is configured for `main` / `docs`, but this new URL and functionality have **not yet been independently verified**.
+The source is committed to the public profile repository's `docs` folder. GitHub Pages is configured for `main` / `docs`, and the founder reported on October 12, 2026 that the live dashboard and guided milestone/approval walkthrough worked. **No independent browser verification was performed.**
 
 ## Guided smoke test
 
