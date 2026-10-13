@@ -45,7 +45,9 @@ A system designed to coordinate AI roles, models, tools, missions, approvals, an
 
 **Why it matters:** Delegation is only useful when operators can understand, verify, and control what automated systems do.
 
-**Status:** In development. Private source; sanitized architecture walkthrough and demonstrations planned.
+**Verified local checkpoint (Oct. 12, 2026):** 146 security and 174 domain/persistence test executions passed; one skipped. Results used five test-only corrections in an isolated worktree, not the pristine commit or full suite. [Scope and limitations](docs/master-key.md) · [Evidence index](docs/evidence.md).
+
+**Status:** In development. Private source; no claim of a production autonomous workforce. Sanitized demonstrations planned.
 
 ---
 
