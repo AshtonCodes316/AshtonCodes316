@@ -41,6 +41,8 @@ I combine business operations and customer-facing management experience with han
 
 **Work documented:** Local-first workflow design and AI-assisted application process concepts. **Public implementation demo pending.** [Case study](applyforge.md).
 
+**Technical skills and career readiness:** [Evidence-backed skills matrix and job alignment →](technical-skills-career.md)
+
 ## Skills demonstrated vs. areas under development
 
 | Area | What the public portfolio supports |
