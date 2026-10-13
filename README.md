@@ -109,6 +109,12 @@ A separate project in my development portfolio. A verified description and visua
 
 **Status:** Private repository; public overview pending.
 
+## 🧪 Try an interactive automation prototype
+
+[**Automation Lab — Open the browser demo source →**](docs/automation-lab/index.html) · [How to run and what it proves](docs/automation-lab/README.md)
+
+Explore approval gates, blocked workflows, draft preparation, and a local JSON evidence receipt. This is a **static, rule-based educational demo**, not a live AI integration. Public web hosting is not yet verified.
+
 ## 💼 AI automation for real business workflows
 
 [**Explore business-focused automation use cases →**](docs/business-automation.md)
