@@ -2,7 +2,7 @@
 
 **AI implementation · workflow automation · technical solutions · technical customer success**
 
-[GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md)
+[**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
 ## What I can bring to a team
 
