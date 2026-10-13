@@ -121,6 +121,12 @@ Explore approval gates, blocked workflows, draft preparation, and a local JSON e
 
 A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Founder-reported check (Oct. 12, 2026):** The live page opened and the readiness/handoff walkthrough worked. No independent browser test was performed.
 
+## 📊 Implementation Dashboard — interactive demo
+
+[**TRY THE IMPLEMENTATION DASHBOARD →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [How it works and limitations](docs/implementation-dashboard/README.md)
+
+A third browser-only portfolio prototype for fictional customer implementation milestones, blockers, owner assignment, and simulated go-live approvals. **Live deployment and functionality are not yet verified.**
+
 ## 💼 AI automation for real business workflows
 
 [**Explore business-focused automation use cases →**](docs/business-automation.md)
