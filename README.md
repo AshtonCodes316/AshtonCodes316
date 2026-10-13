@@ -43,6 +43,8 @@ A system designed to coordinate AI roles, models, tools, missions, approvals, an
 
 **Engineering themes:** mission lifecycles · permission boundaries · model/tool registries · evidence and audit trails · independent review · spending controls · operator interfaces.
 
+**Recruiter-friendly deep dive:** [How I investigated and verified MK's security and persistence tests →](docs/mk-engineering-case-study.md) · [Architecture diagram](docs/mk-architecture.md) · [90-second demo plan](docs/mk-demo-storyboard.md)
+
 **Why it matters:** Delegation is only useful when operators can understand, verify, and control what automated systems do.
 
 **Verified local checkpoint (Oct. 12, 2026):** 146 security and 174 domain/persistence test executions passed; one skipped. Results used five test-only corrections in an isolated worktree, not the pristine commit or full suite. [Scope and limitations](docs/master-key.md) · [Evidence index](docs/evidence.md).
