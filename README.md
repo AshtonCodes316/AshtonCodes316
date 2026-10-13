@@ -13,7 +13,7 @@
 
 **Designing human-governed AI workflows and practical software — with evidence before claims.**
 
-[**PROJECT PORTFOLIO →**](docs/portfolio.md) · [**GITHUB PROFILE →**](https://github.com/AshtonCodes316)
+[**RECRUITER QUICK START →**](docs/recruiter.md) · [**PROJECT STATUS →**](docs/project-status.md) · [**FULL PORTFOLIO →**](docs/portfolio.md)
 
 </div>
 
@@ -31,7 +31,7 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 ## 🚀 Featured projects
 
-**Explore the work:** [Portfolio overview](docs/portfolio.md) · [Project development status](#-featured-projects)
+**Explore the work:** [Recruiter quick start](docs/recruiter.md) · [Portfolio overview](docs/portfolio.md) · [Project maturity dashboard](docs/project-status.md)
 
 > **Portfolio transparency:** These projects are in different stages of development. Their source repositories are currently private. The descriptions below distinguish implemented checkpoints from plans; no production deployments are implied.
 
