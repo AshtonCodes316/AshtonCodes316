@@ -18,6 +18,10 @@ I combine business operations and customer-facing management experience with han
 
 [**Try Automation Lab live →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/) · [Source, instructions, and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests. The founder confirmed the page and approval tests worked; no independent browser test has been performed.
 
+## Second interactive portfolio example
+
+[**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; live deployment and functional tests are pending confirmation.
+
 ## Start here: 3 useful links
 
 | Want to see… | Open |
