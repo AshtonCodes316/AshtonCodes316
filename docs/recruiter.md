@@ -24,7 +24,7 @@ I combine business operations and customer-facing management experience with han
 
 ## Implementation Dashboard — third interactive example
 
-[**Try the Implementation Dashboard →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [Demo instructions and limitations](implementation-dashboard/README.md). Simulates fictional customer milestones, blockers, and go-live review. **Live deployment and functionality are pending verification.**
+[**Try the Implementation Dashboard →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [Demo instructions and limitations](implementation-dashboard/README.md). Simulates fictional customer milestones, blockers, and go-live review. **Founder-reported smoke test (Oct. 12, 2026):** Live page and guided milestone/approval flow worked; independent verification is still pending.
 
 ## Start here: 3 useful links
 
