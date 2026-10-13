@@ -119,7 +119,7 @@ Explore approval gates, blocked workflows, draft preparation, and a local JSON e
 
 [**TRY WORKFLOW STUDIO →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [Source and honest limitations](docs/workflow-studio/README.md)
 
-A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Deployment and browser behavior have not yet been verified.**
+A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Founder-reported check (Oct. 12, 2026):** The live page opened and the readiness/handoff walkthrough worked. No independent browser test was performed.
 
 ## 💼 AI automation for real business workflows
 
