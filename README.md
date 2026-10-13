@@ -115,6 +115,8 @@ A separate project in my development portfolio. A verified description and visua
 
 See how the portfolio's project concepts connect to support triage, operational handoffs, data validation, and workflow tracking. The examples distinguish proposed applications from implemented and verified capabilities.
 
+**Career-ready skills overview:** [Technical skills, job alignment, and learning roadmap →](docs/technical-skills-career.md)
+
 ## 🛠️ Engineering focus
 
 | Area | What I build and explore |
