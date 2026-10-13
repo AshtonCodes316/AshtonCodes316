@@ -115,6 +115,12 @@ A separate project in my development portfolio. A verified description and visua
 
 Explore approval gates, blocked workflows, draft preparation, and a local JSON evidence receipt. This is a **static, rule-based educational demo**, not a live AI integration. GitHub Pages is enabled; the founder confirmed the live page opened and the approval-gate scenarios worked on October 12, 2026. No independent browser verification has been performed.
 
+## 🧩 Interactive customer onboarding workflow
+
+[**TRY WORKFLOW STUDIO →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [Source and honest limitations](docs/workflow-studio/README.md)
+
+A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Deployment and browser behavior have not yet been verified.**
+
 ## 💼 AI automation for real business workflows
 
 [**Explore business-focused automation use cases →**](docs/business-automation.md)
