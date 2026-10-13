@@ -14,6 +14,10 @@ I combine business operations and customer-facing management experience with han
 
 [Explore practical AI automation use cases →](business-automation.md) — proposed workflows for customer support, operations, data quality, and application tracking, with safeguards and measurable success criteria. These are examples, not deployed customer results.
 
+## Try a small interactive prototype
+
+[Automation Lab — interactive browser demo source](automation-lab/index.html) · [Run instructions and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests; public hosting has not been verified.
+
 ## Start here: 3 useful links
 
 | Want to see… | Open |
