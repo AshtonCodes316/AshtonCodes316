@@ -6,7 +6,7 @@
 
 **GitHub Pages URL (expected when the site rebuilds):** https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/
 
-The page is published from the existing `main` / `docs` GitHub Pages configuration. This link has **not yet been independently verified live**.
+The page is published from the existing `main` / `docs` GitHub Pages configuration. The founder reported on October 12, 2026 that the live page opened and the guided readiness/handoff walkthrough worked. **No independent browser test was performed.**
 
 ## Demo walkthrough
 
