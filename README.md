@@ -109,6 +109,12 @@ A separate project in my development portfolio. A verified description and visua
 
 **Status:** Private repository; public overview pending.
 
+## 💼 AI automation for real business workflows
+
+[**Explore business-focused automation use cases →**](docs/business-automation.md)
+
+See how the portfolio's project concepts connect to support triage, operational handoffs, data validation, and workflow tracking. The examples distinguish proposed applications from implemented and verified capabilities.
+
 ## 🛠️ Engineering focus
 
 | Area | What I build and explore |
