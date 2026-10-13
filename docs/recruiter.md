@@ -16,7 +16,7 @@ I combine business operations and customer-facing management experience with han
 
 ## Try a small interactive prototype
 
-[Automation Lab — interactive browser demo source](automation-lab/index.html) · [Run instructions and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests; public hosting has not been verified.
+[**Try Automation Lab live →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/) · [Source, instructions, and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests. The founder confirmed the page and approval tests worked; no independent browser test has been performed.
 
 ## Start here: 3 useful links
 
