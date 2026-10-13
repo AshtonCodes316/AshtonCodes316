@@ -2,7 +2,7 @@
 
 **AI orchestration · human approval gates · mission verification · auditable automation**
 
-[← Back to profile](../README.md) · [Portfolio](portfolio.md) · [Evidence index](evidence.md)
+[← Back to profile](../README.md) · [Portfolio](portfolio.md) · [Evidence index](evidence.md) · [Architecture diagram](mk-architecture.md) · [90-second demo storyboard](mk-demo-storyboard.md)
 
 ## The problem
 
