@@ -12,6 +12,12 @@ A **static, browser-only** interactive portfolio example of an approval-gated su
 
 **No AI model, external worker, CRM, help desk, or network API is called.** The classifier is a deliberately simple keyword heuristic. Nothing is submitted or sent. The user-entered text appears in the local receipt, so **do not enter sensitive information**.
 
+## Live demonstration
+
+[**Launch Automation Lab on GitHub Pages →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/)
+
+The founder confirmed on October 12, 2026 that the site opened and the approval-blocked and approved-draft scenarios worked. This is user-reported verification, not an independent automated browser test. Deployment availability can change.
+
 ## Run locally
 
 Open `index.html` in a modern browser. For SHA-256 support, serve the directory on localhost (for example, `python -m http.server 8000`) and visit the local page. Alternatively, host it as static files on GitHub Pages **if Pages is configured**. Merely committing these files does not mean the demo is deployed to a public URL.
