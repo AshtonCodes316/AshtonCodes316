@@ -20,7 +20,7 @@ I combine business operations and customer-facing management experience with han
 
 ## Second interactive portfolio example
 
-[**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; live deployment and functional tests are pending confirmation.
+[**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; the founder reported the live page and guided workflow worked on October 12, 2026; independent testing remains pending.
 
 ## Start here: 3 useful links
 
