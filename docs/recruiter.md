@@ -14,6 +14,8 @@ The public example currently defines **10 automated test methods**. It is an edu
 
 ## Customer implementation engineering proof
 
+[Engineering case study: requirements, failure handling, 24-scenario matrix](implementation-simulator-case-study.md).
+
 [Runnable onboarding simulator](../examples/implementation-simulator/README.md) · [Source and 12 test methods](../examples/implementation-simulator/test_simulator.py) · [CI verification history](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/implementation-simulator.yml). Fictional inputs, no external calls or real customer outcomes.
 
 ## What I can bring to a team
