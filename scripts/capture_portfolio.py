@@ -16,6 +16,7 @@ OUT = Path(__file__).resolve().parents[1] / "browser-evidence"
 PUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
 PAGES = {
     "portfolio": "",
+    "orchestration-atlas": "orchestration-atlas/",
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
@@ -55,6 +56,12 @@ def main():
                         page.screenshot(path=str(PUBLIC_PREVIEWS / f"{name}.png"), full_page=False, animations="disabled")
                     page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
                                     animations="disabled")
+                    if name == "orchestration-atlas":
+                        nodes = page.locator(".node")
+                        assert nodes.count() == 6, "Atlas must have six stages"
+                        nodes.nth(3).click()
+                        assert page.locator("#detail-title").inner_text() == "Approval", "Atlas stage interaction failed"
+                        assert nodes.nth(3).get_attribute("aria-pressed") == "true", "Atlas selection state failed"
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
