@@ -19,6 +19,7 @@ PAGES = {
     "orchestration-atlas": "orchestration-atlas/",
     "control-room": "control-room/",
     "recruiter-one-pager": "recruiter-one-pager.html",
+    "recruiter-case-studies": "recruiter-case-studies.html",
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
@@ -78,10 +79,13 @@ def main():
                         assert page.locator("#export").is_enabled(), "Evidence export must be available"
                     if name == "portfolio":
                         assert page.locator("#hire").count() == 1, "Recruiter conversion section missing"
-                        assert page.locator('a[href="recruiter-one-pager.html"]').count() >= 1, "Recruiter one-pager link missing"
+                        assert page.locator('a[href="recruiter-case-studies.html"]').count() >= 1, "Case study hub link missing"
                     if name == "recruiter-one-pager":
                         assert page.locator("h1").inner_text() == "Ashton Simmons", "One-pager heading missing"
                         assert page.locator('a[href="control-room/"]').count() == 1, "Featured project link missing"
+                    if name == "recruiter-case-studies":
+                        assert page.locator("section.card").count() == 3, "Expected three case studies"
+                        assert page.locator('a[href="control-room/"]').count() >= 1, "Control Room proof missing"
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
