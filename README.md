@@ -2,18 +2,15 @@
 
 <div align="center">
 
-# ASHTON SIMMONS
-### AI Orchestration • Automation • Software Engineering • Product Building
+### AI SYSTEMS · AUTOMATION · IMPLEMENTATION
 
-**Building ambitious systems, one verifiable milestone at a time.**
+**Human-governed workflows. Practical software. Evidence-first engineering.**
 
-[![Portfolio](https://img.shields.io/badge/EXPLORE-6_PROJECTS-111827?style=for-the-badge&logo=github&logoColor=white)](#-featured-projects)
-[![Focus](https://img.shields.io/badge/FOCUS-AI_ORCHESTRATION-2563eb?style=for-the-badge)](#-the-master-key--ai-orchestration--governance)
-[![Method](https://img.shields.io/badge/BUILD-TEST_%E2%86%92_VERIFY-059669?style=for-the-badge)](#-how-i-build)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-18253b?style=for-the-badge&logo=githubpages&logoColor=white)](https://ashtoncodes316.github.io/AshtonCodes316/)
+[![Proof](https://img.shields.io/badge/ENGINEERING-VERIFIED_WORK-117e77?style=for-the-badge)](docs/public-proof-lab.md)
+[![Recruiter](https://img.shields.io/badge/RECRUITERS-START_HERE-5146a6?style=for-the-badge)](docs/recruiter.md)
 
-**Designing human-governed AI workflows and practical software — with evidence before claims.**
-
-[**🌐 LIVE PORTFOLIO WEBSITE →**](https://ashtoncodes316.github.io/AshtonCodes316/) · [**RECRUITER QUICK START →**](docs/recruiter.md) · [**PROJECT STATUS →**](docs/project-status.md) · [**FULL PORTFOLIO →**](docs/portfolio.md)
+[**Explore projects**](#-featured-projects) &nbsp;·&nbsp; [**Try interactive demos**](#-recruiter-ready-interactive-portfolio) &nbsp;·&nbsp; [**Review engineering proof**](docs/public-proof-lab.md) &nbsp;·&nbsp; [**Connect**](#-lets-connect)
 
 </div>
 
