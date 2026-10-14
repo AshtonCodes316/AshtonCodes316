@@ -12,7 +12,7 @@ import json
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
-OUT = Path(__file__).resolve().parents[1] / "browser-evidence"
+OUT = Path(__file__).resolve().parents[1] / "browser-evidence"\nPUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
 PAGES = {
     "portfolio": "",
     "automation-lab": "automation-lab/",
@@ -35,7 +35,7 @@ def local_server():
         thread.join(timeout=3)
 
 def main():
-    OUT.mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)\n    PUBLIC_PREVIEWS.mkdir(parents=True, exist_ok=True)
     report = []
     failures = []
     with local_server() as base, sync_playwright() as playwright:
@@ -49,7 +49,7 @@ def main():
                     errors = []
                     page.on("pageerror", lambda exc: errors.append(str(exc)))
                     response = page.goto(base + route, wait_until="networkidle", timeout=20000)
-                    page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
+                    if viewport == "desktop" and name != "portfolio":\n                        page.screenshot(path=str(PUBLIC_PREVIEWS / f"{name}.png"), full_page=False, animations="disabled")\n                    page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
                                     animations="disabled")
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
