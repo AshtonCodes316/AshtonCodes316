@@ -17,6 +17,7 @@ PUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
 PAGES = {
     "portfolio": "",
     "orchestration-atlas": "orchestration-atlas/",
+    "control-room": "control-room/",
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
@@ -62,6 +63,18 @@ def main():
                         nodes.nth(3).click()
                         assert page.locator("#detail-title").inner_text() == "Approval", "Atlas stage interaction failed"
                         assert nodes.nth(3).get_attribute("aria-pressed") == "true", "Atlas selection state failed"
+                    if name == "control-room":
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        assert page.locator("#approve").is_enabled(), "Approval gate must activate"
+                        assert page.locator("#next").is_disabled(), "Approval gate must block progression"
+                        page.locator("#reject").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        assert "REJECTION" in page.locator("#status").inner_text(), "Rejected scenario must fail closed"
+                        assert page.locator("#export").is_enabled(), "Evidence export must be available"
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
