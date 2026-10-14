@@ -4,7 +4,21 @@ Use these as **project** descriptions in applications, LinkedIn Featured items, 
 
 ## Short introduction (about 45 words)
 
-I combine customer-facing business operations experience with hands-on automation and implementation project work. I've built three public, interactive workflow simulations covering customer support, onboarding, and implementation readiness, with explicit approval checks and downloadable evidence receipts. I'm seeking remote, early-career AI implementation, automation, and technical customer success opportunities.
+I combine customer-facing business operations experience with hands-on automation and implementation project work. I've built interactive, browser-based workflow simulations covering customer support, onboarding, and implementation readiness, with explicit approval checks and downloadable evidence receipts. I'm seeking remote, early-career AI implementation, automation, and technical customer success opportunities.
+
+## Flagship Control Room — portfolio project
+
+**One-line résumé / LinkedIn project entry:** Built an interactive browser-only orchestration simulation featuring scenario selection, a human approval gate, deterministic outcomes, and downloadable JSON audit trails.
+
+**Application-ready explanation:** I designed a simulated control room for customer onboarding, invoice exceptions, and technical support escalation. Visitors can step through request, planning, worker, approval, evidence, and result stages; approve or reject a fictional action; and inspect a locally generated decision record. The demo illustrates governance and process design. It does not invoke a real AI model, authorize real transactions, or connect to production systems.
+
+**Link:** https://ashtoncodes316.github.io/AshtonCodes316/control-room/
+
+## Orchestration Atlas — architecture explainer
+
+**One-line résumé / LinkedIn project entry:** Created an interactive, keyboard-accessible six-stage AI workflow architecture explainer to communicate approval and evidence boundaries.
+
+**Link:** https://ashtoncodes316.github.io/AshtonCodes316/orchestration-atlas/
 
 ## Automation Lab
 
