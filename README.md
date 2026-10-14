@@ -167,6 +167,12 @@ I care about the work behind the demo: readable documentation, meaningful checkp
 I'm interested in **remote opportunities** spanning AI implementation, automation, technical solutions, and software/product development.
 
 
+### ◇ Open to remote AI implementation & automation roles
+
+**[Recruiter one-page profile →](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-one-pager.html)** · [Connect on LinkedIn](https://www.linkedin.com/in/ashton-simmons-406793393/) · [Engineering case study](docs/mk-engineering-case-study.md)
+
+I bring customer-facing business operations experience to practical automation prototyping, workflow documentation, human-approval boundaries, and technical troubleshooting. I'm exploring early-career AI implementation, automation, solutions support, and technical customer success opportunities.
+
 ### ◈ Master Key-inspired Control Room
 
 **[Enter the interactive Control Room →](https://ashtoncodes316.github.io/AshtonCodes316/control-room/)**
