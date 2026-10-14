@@ -25,3 +25,7 @@ The fixed order ensures consent and approval checks take precedence over simulat
 ## Inspect the proof
 
 Read [the tests](test_simulator.py) and [the workflow](../../.github/workflows/implementation-simulator.yml). CI outcomes must be verified from [GitHub Actions runs](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/implementation-simulator.yml), not assumed from this README.
+
+## Exhaustive scenario coverage
+
+[Run the 24-case scenario matrix](scenarios.py) · [Five matrix tests](test_scenarios.py) · [Engineering case study](../../docs/implementation-simulator-case-study.md). Matrix output is a deterministic **simulation**, not measured customer outcomes.
