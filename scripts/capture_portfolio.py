@@ -36,7 +36,8 @@ def local_server():
         thread.join(timeout=3)
 
 def main():
-    OUT.mkdir(parents=True, exist_ok=True)\n    PUBLIC_PREVIEWS.mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    PUBLIC_PREVIEWS.mkdir(parents=True, exist_ok=True)
     report = []
     failures = []
     with local_server() as base, sync_playwright() as playwright:
@@ -50,7 +51,9 @@ def main():
                     errors = []
                     page.on("pageerror", lambda exc: errors.append(str(exc)))
                     response = page.goto(base + route, wait_until="networkidle", timeout=20000)
-                    if viewport == "desktop" and name != "portfolio":\n                        page.screenshot(path=str(PUBLIC_PREVIEWS / f"{name}.png"), full_page=False, animations="disabled")\n                    page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
+                    if viewport == "desktop" and name != "portfolio":
+                        page.screenshot(path=str(PUBLIC_PREVIEWS / f"{name}.png"), full_page=False, animations="disabled")
+                    page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
                                     animations="disabled")
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
@@ -68,7 +71,8 @@ def main():
                 context.close()
         finally:
             browser.close()
-    (OUT / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+    (OUT / "report.json").write_text(json.dumps(report, indent=2) + "
+")
     print(json.dumps({"screenshots": len(report), "failures": failures}, indent=2))
     if failures:
         raise SystemExit("Browser QA found a page error or horizontal overflow")
