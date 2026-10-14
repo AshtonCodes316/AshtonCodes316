@@ -15,13 +15,17 @@ python -m unittest -v
 
 ## Local verification (October 12, 2026)
 
-The example was executed in a separate local working environment: **4 tests passed**, zero failures. The example output reported `BLOCKED_NO_QUALIFIED_WORKER`, `real_worker_called: false`, and a SHA-256 receipt. These results are for **this public standalone example only**, not the private MK test suite.
+The example was executed in a separate local working environment: **4 tests passed at that checkpoint**, zero failures. The example output reported `BLOCKED_NO_QUALIFIED_WORKER`, `real_worker_called: false`, and a SHA-256 receipt. These results are for **this public standalone example only**, not the private MK test suite.
 
 ## Independently inspectable CI
 
 [GitHub Actions verification runs](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/public-proof.yml) · [Public Proof Lab and verification rubric](../../docs/public-proof-lab.md)
 
 CI status is determined by the linked runs for each commit; this document does not imply the private MK system passed CI.
+
+## Expanded verification suite
+
+The current test file contains **10 independent test methods** covering all four approval/worker-availability combinations, approval precedence, no-dispatch behavior, reproducible receipt hashes, and evidence integrity. The current CI result must be checked before treating this expansion as passed.
 
 ## Boundaries
 
