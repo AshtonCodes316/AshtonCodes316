@@ -17,6 +17,12 @@ python -m unittest -v
 
 The example was executed in a separate local working environment: **4 tests passed**, zero failures. The example output reported `BLOCKED_NO_QUALIFIED_WORKER`, `real_worker_called: false`, and a SHA-256 receipt. These results are for **this public standalone example only**, not the private MK test suite.
 
+## Independently inspectable CI
+
+[GitHub Actions verification runs](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/public-proof.yml) · [Public Proof Lab and verification rubric](../../docs/public-proof-lab.md)
+
+CI status is determined by the linked runs for each commit; this document does not imply the private MK system passed CI.
+
 ## Boundaries
 
 - No external models, network calls, live workers, or paid APIs.
@@ -24,4 +30,4 @@ The example was executed in a separate local working environment: **4 tests pass
 - Hashing evidence is not a digital signature, tamper-proof audit log, or independent verification.
 - The private MK implementation is not included or implied to have been tested here.
 
-[Back to MK case study](../docs/master-key.md) · [Main profile](../README.md)
+[Back to MK case study](../../docs/master-key.md) · [Main profile](../README.md)
