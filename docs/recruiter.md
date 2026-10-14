@@ -4,6 +4,10 @@
 
 [**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
+## Contact and application materials
+
+[**One-page recruiter profile**](recruiter-one-pager.html) · [**LinkedIn and outreach kit**](career-outreach-kit.md) · [**Interactive Control Room**](control-room/) · [LinkedIn profile](https://www.linkedin.com/in/ashton-simmons-406793393/)
+
 ## Verify the engineering in 60 seconds
 
 1. [Open the public governance code and test suite](../examples/mk-governance/README.md) — inspect human approval, fail-closed behavior, and deterministic receipts.
