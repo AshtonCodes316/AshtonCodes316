@@ -12,6 +12,10 @@
 
 The public example currently defines **10 automated test methods**. It is an educational simulation, **not** the private MK runtime, a live AI integration, or proof of production readiness. The linked workflow history is the source of truth for current CI status.
 
+## Customer implementation engineering proof
+
+[Runnable onboarding simulator](../examples/implementation-simulator/README.md) · [Source and 12 test methods](../examples/implementation-simulator/test_simulator.py) · [CI verification history](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/implementation-simulator.yml). Fictional inputs, no external calls or real customer outcomes.
+
 ## What I can bring to a team
 
 I combine business operations and customer-facing management experience with hands-on learning and project work in Python, AI orchestration concepts, software testing, and workflow design. I am targeting **remote early-career roles** where I can help implement, support, document, and improve practical AI-enabled processes.
