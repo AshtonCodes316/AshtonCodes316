@@ -166,6 +166,15 @@ I care about the work behind the demo: readable documentation, meaningful checkp
 
 I'm interested in **remote opportunities** spanning AI implementation, automation, technical solutions, and software/product development.
 
+
+### ✦ Interactive Orchestration Atlas
+
+**[Explore the orchestration atlas →](https://ashtoncodes316.github.io/AshtonCodes316/orchestration-atlas/)** · [Portfolio homepage](https://ashtoncodes316.github.io/AshtonCodes316/) · [Engineering evidence](docs/evidence.md)
+
+A keyboard-accessible, six-stage interactive architecture explainer for human-governed AI workflows: request → plan → worker → human approval → evidence → result. This is an **educational browser-only model**, not a connected Master Key runtime or production approval service. Every stage links to public demos or documentation that can be inspected independently.
+
+---
+
 **GitHub:** [github.com/AshtonCodes316](https://github.com/AshtonCodes316)  
 **Project case studies:** [Six-project portfolio](docs/portfolio.md)  
 **Master Key deep dive:** [Architecture, governance and current limits](docs/master-key.md)  
