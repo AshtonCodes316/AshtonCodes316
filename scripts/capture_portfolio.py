@@ -18,6 +18,7 @@ PAGES = {
     "portfolio": "",
     "orchestration-atlas": "orchestration-atlas/",
     "control-room": "control-room/",
+    "recruiter-one-pager": "recruiter-one-pager.html",
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
@@ -75,6 +76,12 @@ def main():
                         page.locator("#next").click()
                         assert "REJECTION" in page.locator("#status").inner_text(), "Rejected scenario must fail closed"
                         assert page.locator("#export").is_enabled(), "Evidence export must be available"
+                    if name == "portfolio":
+                        assert page.locator("#hire").count() == 1, "Recruiter conversion section missing"
+                        assert page.locator('a[href="recruiter-one-pager.html"]').count() >= 1, "Recruiter one-pager link missing"
+                    if name == "recruiter-one-pager":
+                        assert page.locator("h1").inner_text() == "Ashton Simmons", "One-pager heading missing"
+                        assert page.locator('a[href="control-room/"]').count() == 1, "Featured project link missing"
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
