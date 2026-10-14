@@ -8,6 +8,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 import json
+from urllib.parse import urljoin, urlparse
 
 from playwright.sync_api import sync_playwright
 
@@ -86,6 +87,18 @@ def main():
                     if name == "recruiter-case-studies":
                         assert page.locator("section.card").count() == 3, "Expected three case studies"
                         assert page.locator('a[href="control-room/"]').count() >= 1, "Control Room proof missing"
+                    for href in page.locator("a[href]").evaluate_all(
+                        "(anchors) => anchors.map(a => a.getAttribute('href'))"
+                    ):
+                        if not href or href.startswith(("#", "mailto:", "tel:", "javascript:")):
+                            continue
+                        target = urljoin(page.url, href)
+                        if urlparse(target).netloc != urlparse(base).netloc:
+                            continue
+                        linked = page.request.get(target.split("#", 1)[0], timeout=10000)
+                        if linked.status >= 400:
+                            failures.append({"page": name, "viewport": viewport,
+                                             "broken_link": href, "http_status": linked.status})
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
