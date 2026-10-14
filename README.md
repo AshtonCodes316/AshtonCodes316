@@ -172,6 +172,8 @@ I'm interested in **remote opportunities** spanning AI implementation, automatio
 **GitHub:** [github.com/AshtonCodes316](https://github.com/AshtonCodes316)  
 **Project case studies:** [Six-project portfolio](docs/portfolio.md)  
 **Master Key deep dive:** [Architecture, governance and current limits](docs/master-key.md)  
+**Customer implementation proof:** [Tested onboarding simulator](examples/implementation-simulator/README.md) · [CI runs](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/implementation-simulator.yml)
+
 **Engineering evidence:** [CI-backed Public Proof Lab](docs/public-proof-lab.md) · [Evidence index](docs/evidence.md) · [Runnable MK governance example](examples/mk-governance/README.md)
 
 <div align="center">
