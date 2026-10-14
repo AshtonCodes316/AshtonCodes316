@@ -13,8 +13,11 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
 OUT = Path(__file__).resolve().parents[1] / "browser-evidence"
+PUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
 PAGES = {
     "portfolio": "",
+    "orchestration-atlas": "orchestration-atlas/",
+    "control-room": "control-room/",
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
@@ -36,6 +39,7 @@ def local_server():
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    PUBLIC_PREVIEWS.mkdir(parents=True, exist_ok=True)
     report = []
     failures = []
     with local_server() as base, sync_playwright() as playwright:
@@ -49,8 +53,28 @@ def main():
                     errors = []
                     page.on("pageerror", lambda exc: errors.append(str(exc)))
                     response = page.goto(base + route, wait_until="networkidle", timeout=20000)
+                    if viewport == "desktop" and name != "portfolio":
+                        page.screenshot(path=str(PUBLIC_PREVIEWS / f"{name}.png"), full_page=False, animations="disabled")
                     page.screenshot(path=str(OUT / f"{name}-{viewport}.png"), full_page=True,
                                     animations="disabled")
+                    if name == "orchestration-atlas":
+                        nodes = page.locator(".node")
+                        assert nodes.count() == 6, "Atlas must have six stages"
+                        nodes.nth(3).click()
+                        assert page.locator("#detail-title").inner_text() == "Approval", "Atlas stage interaction failed"
+                        assert nodes.nth(3).get_attribute("aria-pressed") == "true", "Atlas selection state failed"
+                    if name == "control-room":
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        assert page.locator("#approve").is_enabled(), "Approval gate must activate"
+                        assert page.locator("#next").is_disabled(), "Approval gate must block progression"
+                        page.locator("#reject").click()
+                        page.locator("#next").click()
+                        page.locator("#next").click()
+                        assert "REJECTION" in page.locator("#status").inner_text(), "Rejected scenario must fail closed"
+                        assert page.locator("#export").is_enabled(), "Evidence export must be available"
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,

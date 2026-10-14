@@ -1,0 +1,47 @@
+name: Publish authentic demo previews
+on:
+  push:
+    branches: [elite-authentic-demo-previews]
+    paths:
+      - 'scripts/capture_portfolio.py'
+      - '.github/workflows/publish-demo-previews.yml'
+      - 'docs/automation-lab/index.html'
+      - 'docs/workflow-studio/index.html'
+      - 'docs/implementation-dashboard/index.html'
+      - 'docs/assets/portfolio-system.css'
+permissions:
+  contents: write
+concurrency:
+  group: authentic-demo-previews-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Capture real demos and verify responsive layout
+        run: python scripts/capture_portfolio.py
+      - name: Commit genuine browser PNGs to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/assets/screenshots/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add real Chromium demo preview screenshots [skip ci]"
+            git pull --rebase origin elite-authentic-demo-previews
+            git push origin HEAD:elite-authentic-demo-previews
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portfolio-browser-evidence
+          path: browser-evidence/
