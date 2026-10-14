@@ -10,7 +10,7 @@
 [![Proof](https://img.shields.io/badge/ENGINEERING-VERIFIED_WORK-117e77?style=for-the-badge)](docs/public-proof-lab.md)
 [![Recruiter](https://img.shields.io/badge/RECRUITERS-START_HERE-5146a6?style=for-the-badge)](docs/recruiter.md)
 
-[**Explore projects**](#-featured-projects) &nbsp;·&nbsp; [**Try interactive demos**](#-recruiter-ready-interactive-portfolio) &nbsp;·&nbsp; [**Review engineering proof**](docs/public-proof-lab.md) &nbsp;·&nbsp; [**Connect**](#-lets-connect)
+[**Recruiter case studies**](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) &nbsp;·&nbsp; [**Explore projects**](#-featured-projects) &nbsp;·&nbsp; [**Try interactive demos**](#-recruiter-ready-interactive-portfolio) &nbsp;·&nbsp; [**Review engineering proof**](docs/public-proof-lab.md) &nbsp;·&nbsp; [**Connect**](#-lets-connect)
 
 </div>
 
@@ -28,7 +28,7 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 ## 🚀 Featured projects
 
-**Explore the work:** [Recruiter quick start](docs/recruiter.md) · [Portfolio overview](docs/portfolio.md) · [Project maturity dashboard](docs/project-status.md)
+**Start with three implementation case studies:** [Case study hub](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) · [90-second walkthrough script](docs/90-second-walkthrough.md)\n\n**Explore the work:** [Recruiter quick start](docs/recruiter.md) · [Portfolio overview](docs/portfolio.md) · [Project maturity dashboard](docs/project-status.md)
 
 > **Portfolio transparency:** These projects are in different stages of development. Their source repositories are currently private. The descriptions below distinguish implemented checkpoints from plans; no production deployments are implied.
 
