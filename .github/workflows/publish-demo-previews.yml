@@ -11,6 +11,9 @@ on:
       - 'docs/assets/portfolio-system.css'
 permissions:
   contents: write
+concurrency:
+  group: authentic-demo-previews-publisher
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -34,7 +37,8 @@ jobs:
           git add docs/assets/screenshots/
           if ! git diff --cached --quiet; then
             git commit -m "Add real Chromium demo preview screenshots [skip ci]"
-            git push
+            git pull --rebase origin elite-authentic-demo-previews
+            git push origin HEAD:elite-authentic-demo-previews
           fi
       - uses: actions/upload-artifact@v4
         if: always()
