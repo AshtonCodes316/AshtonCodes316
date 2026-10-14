@@ -1,0 +1,30 @@
+name: Public governance proof
+on:
+  push:
+    paths:
+      - 'examples/mk-governance/**'
+      - '.github/workflows/public-proof.yml'
+  pull_request:
+    paths:
+      - 'examples/mk-governance/**'
+      - '.github/workflows/public-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Run standard-library governance tests
+        working-directory: examples/mk-governance
+        run: python3 -m unittest discover -v
+      - name: Verify deterministic demo output
+        working-directory: examples/mk-governance
+        run: |
+          python3 demo.py > /tmp/mk-demo.json
+          python3 -c 'import json; d=json.load(open("/tmp/mk-demo.json")); assert d["evidence"]["outcome"]=="BLOCKED_NO_QUALIFIED_WORKER"; assert d["evidence"]["real_worker_called"] is False'
