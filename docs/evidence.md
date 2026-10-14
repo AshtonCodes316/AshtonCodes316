@@ -15,6 +15,10 @@ This page separates **documented repository evidence** from future demonstration
 
 The Oct. 12 results are **self-reported local test runs**, not independent verification or pristine-commit results. The two tested batches total **320 passing test executions and one skip**. The full suite was **collected (3,834 tests), not run**. Five test files were changed in a disposable worktree; production code was unchanged. See [MK case study](master-key.md) for environment, commit, command, and limitations.
 
+## Authorization acceptance investigation (XMAS-29)
+
+A separate October 2026 local assessment reported a calibrated 66-case authorization suite: reference policy gate 66/66 on both tested trees, canonical MK 7/66, and isolated A7 16/66. Five deliberately insecure controls were reportedly detected by targeted tests. These results identify outstanding safety gaps and **do not** establish authorization readiness. The scratchpad evidence, including its SHA-256 inventory, is not publicly accessible or independently reproduced here. See the [authorization regression case study](mk-engineering-case-study.md#authorization-regression-investigation--october-2026-xmas-29).
+
 ## Publication rules
 
 - Do not publish original private source, credentials, tokens, internal hostnames, or personal records.
