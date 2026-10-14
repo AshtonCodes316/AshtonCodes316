@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/workflows/portfolio-screenshots.yml'
       - 'docs/**'
+      - 'scripts/capture_portfolio.py'
   workflow_dispatch:
 permissions:
   contents: read
