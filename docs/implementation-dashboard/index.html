@@ -15,7 +15,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.kpi{background:#0b1b2e;border-radius:12px;padding:13px}.num{font-size:1.65rem;font-weight:850;margin:4px 0}
 ul{padding-left:21px;line-height:1.75}.row{border-top:1px solid #385672;padding:10px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#071321;padding:14px;border-radius:8px;max-height:340px;overflow:auto;font-size:.82rem}a{color:#a9e3ff}
 @media(max-width:800px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr 1fr}}
-</style></head><body><main>
+</style><link rel="stylesheet" href="../assets/portfolio-system.css"></head><body><main><nav class="portfolio-nav" aria-label="Portfolio navigation"><a class="portfolio-wordmark" href="../">ASHTON<span>.</span> BUILDS</a><div class="portfolio-links"><a href="../">Overview</a><a href="../automation-lab/">Automation Lab</a><a href="../workflow-studio/">Workflow Studio</a><a href="../implementation-dashboard/" aria-current="page">Implementation</a></div></nav>
 <div class="eyebrow">Ashton Simmons · interactive portfolio project #3</div>
 <h1>Implementation Dashboard</h1>
 <p class="muted">A browser-only simulation for tracking customer implementation readiness, milestones, blockers, and approval gates. This is a <strong>rule-based demo with fictional accounts</strong>—not a live AI platform, CRM, or customer implementation system.</p>
@@ -39,7 +39,7 @@ ul{padding-left:21px;line-height:1.75}.row{border-top:1px solid #385672;padding:
 <p id="gateResult" class="muted" role="status" aria-live="polite">Go-live gate not checked.</p></section></div>
 <section class="card" style="margin-top:18px"><h2>3. Local audit receipt</h2><p class="muted">The receipt records the simulated milestone states and gate decision. No deployment, message, API call, or account update occurs.</p><pre id="receipt">No receipt yet.</pre><p id="hash" class="muted">SHA-256: —</p><button id="download" disabled>Download JSON receipt</button></section>
 <p class="muted">Privacy: all processing occurs in the browser. Receipts include the values you enter. Use fictional data only. A SHA-256 checksum is not a signature or independent audit. <a href="../recruiter.md">Recruiter overview</a> · <a href="../business-automation.md">Business use cases</a></p>
-</main><script>
+<div class="portfolio-footnote">Part of the Ashton Simmons interactive engineering portfolio · Fictional, browser-only demonstration · <a href="../">Back to portfolio</a></div></main><script>
 "use strict";
 const $=id=>document.getElementById(id),milestoneIds=["discovery","mapping","access","testing","training"];
 const names={discovery:"Requirements discovery",mapping:"Workflow mapping",access:"Access authorization",testing:"Acceptance testing",training:"User handoff / training"};
