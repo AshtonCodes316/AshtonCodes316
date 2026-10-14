@@ -4,6 +4,14 @@
 
 [**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
+## Verify the engineering in 60 seconds
+
+1. [Open the public governance code and test suite](../examples/mk-governance/README.md) — inspect human approval, fail-closed behavior, and deterministic receipts.
+2. [Inspect CI results for the exact commit](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/public-proof.yml) — the GitHub Actions workflow runs the standalone demo's Python tests.
+3. [Read the Public Proof Lab rubric](public-proof-lab.md) — reproduce locally and understand what the tests do **not** establish.
+
+The public example currently defines **10 automated test methods**. It is an educational simulation, **not** the private MK runtime, a live AI integration, or proof of production readiness. The linked workflow history is the source of truth for current CI status.
+
 ## What I can bring to a team
 
 I combine business operations and customer-facing management experience with hands-on learning and project work in Python, AI orchestration concepts, software testing, and workflow design. I am targeting **remote early-career roles** where I can help implement, support, document, and improve practical AI-enabled processes.
