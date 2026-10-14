@@ -71,8 +71,7 @@ def main():
                 context.close()
         finally:
             browser.close()
-    (OUT / "report.json").write_text(json.dumps(report, indent=2) + "
-")
+    (OUT / "report.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps({"screenshots": len(report), "failures": failures}, indent=2))
     if failures:
         raise SystemExit("Browser QA found a page error or horizontal overflow")
