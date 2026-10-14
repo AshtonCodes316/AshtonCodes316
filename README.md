@@ -28,7 +28,9 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 ## 🚀 Featured projects
 
-**Start with three implementation case studies:** [Case study hub](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) · [90-second walkthrough script](docs/90-second-walkthrough.md)\n\n**Explore the work:** [Recruiter quick start](docs/recruiter.md) · [Portfolio overview](docs/portfolio.md) · [Project maturity dashboard](docs/project-status.md)
+**Start with three implementation case studies:** [Case study hub](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) · [90-second walkthrough script](docs/90-second-walkthrough.md)
+
+**Explore the work:** [Recruiter quick start](docs/recruiter.md) · [Portfolio overview](docs/portfolio.md) · [Project maturity dashboard](docs/project-status.md)
 
 > **Portfolio transparency:** These projects are in different stages of development. Their source repositories are currently private. The descriptions below distinguish implemented checkpoints from plans; no production deployments are implied.
 
@@ -110,7 +112,7 @@ A separate project in my development portfolio. A verified description and visua
 
 [**VISIT THE PORTFOLIO WEBSITE →**](https://ashtoncodes316.github.io/AshtonCodes316/) · [Application-ready project descriptions](docs/application-kit.md) · [Real screenshot capture guide](docs/screenshot-guide.md)
 
-A polished landing page featuring three founder-tested, browser-only workflow simulations. The new landing page's deployment has not yet been independently checked; visual previews are illustrations, not captured screenshots.
+A public landing page featuring browser-only workflow simulations and linked engineering evidence. GitHub Actions runs desktop/mobile browser checks; a passing run does not establish production security or live AI integration.
 
 ## 🧪 Try an interactive automation prototype
 
