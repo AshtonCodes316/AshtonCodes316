@@ -13,8 +13,8 @@ button{background:#54dfb9;border:0;border-radius:10px;padding:13px 20px;color:#0
 .status{font-size:1.15rem;font-weight:800;margin:12px 0}.muted{color:#a7b9d0}.steps{margin:12px 0 0;padding-left:22px;line-height:1.8}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#071321;padding:14px;border-radius:10px;font-size:.85rem;max-height:280px;overflow:auto}
 footer{margin-top:28px;color:#afc2d8;font-size:.9rem;line-height:1.6}
 @media(max-width:760px){.grid{grid-template-columns:1fr}main{padding-top:26px}}
-</style></head>
-<body><main>
+</style><link rel="stylesheet" href="../assets/portfolio-system.css"></head>
+<body><main><nav class="portfolio-nav" aria-label="Portfolio navigation"><a class="portfolio-wordmark" href="../">ASHTON<span>.</span> BUILDS</a><div class="portfolio-links"><a href="../">Overview</a><a href="../automation-lab/" aria-current="page">Automation Lab</a><a href="../workflow-studio/">Workflow Studio</a><a href="../implementation-dashboard/">Implementation</a></div></nav>
 <div class="eyebrow">Ashton Simmons / Interactive portfolio</div>
 <h1>Automation Lab</h1>
 <p class="subtitle">Try a transparent, rule-based support request workflow. See classification, approval gates, and a local evidence receipt. <strong>This is a browser-only educational prototype—not a deployed AI model, connected help desk, or the private Master Key runtime.</strong></p>
@@ -37,7 +37,7 @@ footer{margin-top:28px;color:#afc2d8;font-size:.9rem;line-height:1.6}
 <pre id="receipt" aria-live="polite">No receipt yet.</pre><p id="digest" class="muted">SHA-256: —</p>
 <button id="download" type="button" disabled>Download JSON receipt</button></section>
 <footer><strong>Boundaries:</strong> The classifier uses simple keywords and can misclassify. It never sends a response, opens a ticket, calls an AI model, or verifies the truth of the user's text. Approval is a simulated choice in this demo; it is not authenticated authorization. All input stays in this page's browser session; downloading saves a file locally. <a href="../mk-engineering-case-study.md">MK engineering case study</a> · <a href="../recruiter.md">Recruiter overview</a></footer>
-</main>
+<div class="portfolio-footnote">Part of the Ashton Simmons interactive engineering portfolio · Fictional, browser-only demonstration · <a href="../">Back to portfolio</a></div></main>
 <script>
 "use strict";
 const $=id=>document.getElementById(id);let last=null;
