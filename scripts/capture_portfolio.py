@@ -12,7 +12,8 @@ import json
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
-OUT = Path(__file__).resolve().parents[1] / "browser-evidence"\nPUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
+OUT = Path(__file__).resolve().parents[1] / "browser-evidence"
+PUBLIC_PREVIEWS = ROOT / "assets" / "screenshots"
 PAGES = {
     "portfolio": "",
     "automation-lab": "automation-lab/",
