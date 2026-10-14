@@ -167,6 +167,12 @@ I care about the work behind the demo: readable documentation, meaningful checkp
 I'm interested in **remote opportunities** spanning AI implementation, automation, technical solutions, and software/product development.
 
 
+### ◈ Master Key-inspired Control Room
+
+**[Enter the interactive Control Room →](https://ashtoncodes316.github.io/AshtonCodes316/control-room/)**
+
+Explore three deterministic browser-only scenarios, step through six workflow stages, record a simulated human approval or rejection, and export a JSON audit trail. This public demonstration is **not connected to private MK, real AI models, or production customer systems**.
+
 ### ✦ Interactive Orchestration Atlas
 
 **[Explore the orchestration atlas →](https://ashtoncodes316.github.io/AshtonCodes316/orchestration-atlas/)** · [Portfolio homepage](https://ashtoncodes316.github.io/AshtonCodes316/) · [Engineering evidence](docs/evidence.md)
