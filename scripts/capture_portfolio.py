@@ -125,6 +125,31 @@ def main():
                         if linked.status >= 400:
                             failures.append({"page": name, "viewport": viewport,
                                              "broken_link": href, "http_status": linked.status})
+                    # Accessibility smoke checks on the newly published recruiter experiences.
+                    # These do not replace WCAG audits or screen-reader testing.
+                    if name in {"guided-demo", "ai-implementation", "ai-implementation-careers",
+                                "automation-operations", "technical-customer-success"}:
+                        accessibility = page.evaluate("""() => {
+                          const visible = e => !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+                          const name = e => (e.getAttribute('aria-label') ||
+                            e.getAttribute('title') || e.innerText || e.textContent || '').trim();
+                          const unnamed = [...document.querySelectorAll('button,a[href]')]
+                            .filter(visible).filter(e => !name(e))
+                            .map(e => e.outerHTML.slice(0, 160));
+                          const missingAlt = [...document.querySelectorAll('img')]
+                            .filter(e => !e.hasAttribute('alt'))
+                            .map(e => e.getAttribute('src'));
+                          const duplicateIds = [...document.querySelectorAll('[id]')]
+                            .map(e => e.id).filter((id,i,all) => all.indexOf(id) !== i);
+                          return {unnamed_controls:unnamed, images_missing_alt:missingAlt,
+                            duplicate_ids:duplicateIds, h1_count:document.querySelectorAll('h1').length,
+                            main_count:document.querySelectorAll('main').length};
+                        }""")
+                        if (accessibility["unnamed_controls"] or accessibility["images_missing_alt"]
+                                or accessibility["duplicate_ids"] or accessibility["h1_count"] != 1
+                                or accessibility["main_count"] != 1):
+                            failures.append({"page": name, "viewport": viewport,
+                                             "accessibility_smoke": accessibility})
                     geometry = page.evaluate("""() => ({
                       scrollWidth: document.documentElement.scrollWidth,
                       clientWidth: document.documentElement.clientWidth,
