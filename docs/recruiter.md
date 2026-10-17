@@ -8,6 +8,8 @@
 
 [**One-page recruiter profile**](recruiter-one-pager.html) · [**LinkedIn and outreach kit**](career-outreach-kit.md) · [**Interactive Control Room**](control-room/) · [LinkedIn profile](https://www.linkedin.com/in/ashton-simmons-406793393/)
 
+**Featured case study:** [AI implementation — local model integration, qualification tests, and the quality decision](ai-implementation-case-study.md). Includes a 60-second walkthrough for hiring teams.
+
 ## Quick match to current job openings
 
 | Hiring need | Relevant experience | Evidence and honest boundary |
