@@ -30,7 +30,7 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 I am studying **Computer Information Systems** and bring hands-on **customer service, sales, and business operations** experience to AI-assisted workflow projects. I am pursuing U.S.-remote, early-career opportunities in **AI enablement, automation operations, SaaS onboarding, implementation, and technical customer success**.
 
-**[NEW: AI Implementation case study — what passed, what failed, and why →](docs/ai-implementation-case-study.md)**
+**[INTERACTIVE AI IMPLEMENTATION CASE STUDY →](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation/)** · [Detailed engineering notes](docs/ai-implementation-case-study.md)
 
 **See the evidence, not just the claims:** [60-second recruiter guide](docs/recruiter.md) · [Working browser demos](#-recruiter-ready-interactive-portfolio) · [Master Key technical case study](docs/master-key.md) · [Skills-to-job matrix](docs/technical-skills-career.md).
 
