@@ -4,6 +4,9 @@
 
 [**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
+
+**[Portfolio quality verification report](portfolio-quality-report.md)** — automated browser, mobile layout, interaction, broken-link and accessibility smoke-check coverage. Latest passing CI run is not yet independently confirmed.
+
 ## Choose a recruiter experience
 
 **[Guided six-chapter portfolio demo](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** — interactive browser presentation, not a video.
