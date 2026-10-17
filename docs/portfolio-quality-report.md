@@ -38,6 +38,14 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 
 The browser test suite now exercises the guided demo with actual ArrowRight and ArrowLeft key presses while the tour is focused, checks that its accessible progress value updates, and records visible mobile links/buttons smaller than 24 pixels in either dimension to per-page JSON files. **This evidence collection does not by itself establish a WCAG touch-target failure**: spacing and exceptions require human review. The newly expanded suite has not yet been verified passing.
 
+## Actual mobile artifact review — October 17, 2026
+
+Inspected the `portfolio-browser-evidence` artifact from [passing workflow 39077308750](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39077308750). The 5 newly tested experiences report **31 visible links/buttons with a measured dimension under 24 CSS pixels**: guided demo 9, AI implementation 5, AI implementation careers 7, automation operations 5, and technical customer success 5. Most listed controls are inline links with ~19-pixel bounding-box heights. These are **review candidates**, not 31 confirmed WCAG failures; target spacing and exceptions were not evaluated.
+
+The axe report contains `incomplete` entries, including color-contrast evaluations on multiple pages, which require manual review even though the automated violation count is zero. The artifact also identified one `aria-prohibited-attr` incomplete item on the homepage. No screen-reader or physical iPhone test was conducted.
+
+**Artifact format correction:** The initial touch-target JSON files had an extra literal `\\n` after the JSON payload. This was corrected in the screenshot runner in commit `a3647f06`; the subsequent run must confirm the files parse directly.
+
 ## Dedicated accessibility audit
 
 The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10.3 in Chromium against local pages, checks WCAG 2.0/2.1/2.2 A/AA-tagged rules at desktop and mobile viewports, and writes `browser-evidence/axe-accessibility-report.json`. The GitHub Actions job is configured to fail if any violations are reported. The check passed in the GitHub Actions run linked above; manual review remains necessary.
