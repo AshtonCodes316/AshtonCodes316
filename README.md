@@ -10,7 +10,7 @@
 [![Proof](https://img.shields.io/badge/ENGINEERING-VERIFIED_WORK-117e77?style=for-the-badge)](docs/public-proof-lab.md)
 [![Recruiter](https://img.shields.io/badge/RECRUITERS-START_HERE-5146a6?style=for-the-badge)](docs/recruiter.md)
 
-[**Interview and application kit**](docs/interview-conversion-kit.md) &nbsp;·&nbsp; [**Recruiter case studies**](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) &nbsp;·&nbsp; [**Explore projects**](#-featured-projects) &nbsp;·&nbsp; [**Try interactive demos**](#-recruiter-ready-interactive-portfolio) &nbsp;·&nbsp; [**Review engineering proof**](docs/public-proof-lab.md) &nbsp;·&nbsp; [**Connect**](#-lets-connect)
+[**Verified browser + accessibility checks**](docs/portfolio-quality-report.md) &nbsp;·&nbsp; [**Interview and application kit**](docs/interview-conversion-kit.md) &nbsp;·&nbsp; [**Recruiter case studies**](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) &nbsp;·&nbsp; [**Explore projects**](#-featured-projects) &nbsp;·&nbsp; [**Try interactive demos**](#-recruiter-ready-interactive-portfolio) &nbsp;·&nbsp; [**Review engineering proof**](docs/public-proof-lab.md) &nbsp;·&nbsp; [**Connect**](#-lets-connect)
 
 </div>
 
