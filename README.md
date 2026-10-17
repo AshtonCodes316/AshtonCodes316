@@ -28,6 +28,12 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 ## 🎯 Recruiter fast track — AI implementation & technical customer success
 
+**[▶ START THE GUIDED PORTFOLIO DEMO](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** · **Role-specific pages:** [AI Implementation](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation-careers/) · [Automation Operations](https://ashtoncodes316.github.io/AshtonCodes316/automation-operations/) · [Technical Customer Success](https://ashtoncodes316.github.io/AshtonCodes316/technical-customer-success/)
+
+*The guided demo is an interactive browser presentation, not a recorded video or live AI worker.*
+
+
+
 I am studying **Computer Information Systems** and bring hands-on **customer service, sales, and business operations** experience to AI-assisted workflow projects. I am pursuing U.S.-remote, early-career opportunities in **AI enablement, automation operations, SaaS onboarding, implementation, and technical customer success**.
 
 **[INTERACTIVE AI IMPLEMENTATION CASE STUDY →](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation/)** · [Detailed engineering notes](docs/ai-implementation-case-study.md)
