@@ -6,11 +6,13 @@ on:
       - '.github/workflows/portfolio-screenshots.yml'
       - 'docs/**'
       - 'scripts/capture_portfolio.py'
+      - 'scripts/audit_portfolio_accessibility.py'
   pull_request:
     paths:
       - '.github/workflows/portfolio-screenshots.yml'
       - 'docs/**'
       - 'scripts/capture_portfolio.py'
+      - 'scripts/audit_portfolio_accessibility.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,6 +31,15 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Capture actual rendered local site and check layouts
         run: python scripts/capture_portfolio.py
+      - name: Install pinned axe-core audit engine
+        run: |
+          mkdir -p scripts/vendor
+          npm view axe-core@4.10.3 version
+          npm pack axe-core@4.10.3 --pack-destination /tmp
+          tar -xzf /tmp/axe-core-4.10.3.tgz -C /tmp package/axe.min.js
+          cp /tmp/package/axe.min.js scripts/vendor/axe.min.js
+      - name: Audit WCAG-tagged accessibility rules
+        run: python scripts/audit_portfolio_accessibility.py
       - name: Upload desktop and mobile evidence
         if: always()
         uses: actions/upload-artifact@v4
