@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
 **Updated:** October 17, 2026  
-**Status:** Browser suite and automated axe-core audit **PASS** at commit `ba268edf` (October 17, 2026); GitHub Pages deployment **PASS** for the same commit. Manual accessibility and physical-device verification remain outstanding.
+**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** at commit `66ec237c` (October 17, 2026). Keyboard-navigation and touch-target evidence collection were subsequently added; their new run is pending. Manual accessibility and physical-device verification remain outstanding.
 
 ## What the existing browser suite checks
 
@@ -23,6 +23,9 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 
 ## Confirmed browser-test and deployment evidence
 
+- [Browser + accessibility workflow PASS — commit 66ec237c](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076268168).
+- [GitHub Pages deployment PASS — commit 66ec237c](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076269087).
+
 - [Browser + axe-core accessibility workflow PASS — commit ba268edf](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076058122).
 - [GitHub Pages deployment PASS — commit ba268edf](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076058252).
 
@@ -30,6 +33,10 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 - [Successful GitHub Actions run for commit 8f67c593](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39051516228) — includes accessibility smoke checks.
 - [Successful GitHub Actions run for commit 5839b9f4](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39051363565) — browser suite on push.
 - **Verified:** The axe-core audit passed on `ba268edf` after correcting the guided tour's ARIA progress indicator. This confirms zero *blocking automated violations* in that run; any axe `incomplete` items still require human review.
+
+## Keyboard and mobile target evidence
+
+The browser test suite now exercises the guided demo with actual ArrowRight and ArrowLeft key presses while the tour is focused, checks that its accessible progress value updates, and records visible mobile links/buttons smaller than 24 pixels in either dimension to per-page JSON files. **This evidence collection does not by itself establish a WCAG touch-target failure**: spacing and exceptions require human review. The newly expanded suite has not yet been verified passing.
 
 ## Dedicated accessibility audit
 
@@ -59,9 +66,10 @@ Existing pages remain in the same suite. The case-study hub assertion was update
 - [x] Confirm a completed, passing GitHub Actions browser-suite run (a3b19d3c).
 - [x] Confirm a passing run of the newly added axe-core audit (`ba268edf`).
 - [ ] Review mobile and desktop screenshots for clipping and readability.
-- [ ] Perform keyboard-only navigation on the new pages.
+- [ ] Confirm new guided-demo keyboard automation passes, then manually test keyboard-only navigation across all new pages.
 - [x] Resolve the blocking guided-tour ARIA violation and confirm the automated audit passes.
 - [ ] Review any incomplete/manual-review items in the axe evidence artifact.
+- [ ] Review mobile touch-target JSON evidence and assess WCAG spacing/exceptions.
 - [ ] Perform at least one real-device iPhone visual check.
 - [x] Confirm GitHub Pages deployment workflow succeeded for tested commit `ba268edf`.
 - [ ] Independently compare the live rendered site with the tested commit.
