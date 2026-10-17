@@ -106,6 +106,31 @@ def main():
                             page.locator("#next").click()
                         assert page.locator("#next").is_disabled(), "Tour should stop at chapter six"
                         assert page.locator("#status").inner_text().startswith("Chapter 6 of 6"), "Final status missing"
+                    if name == "guided-demo":
+                        # Keyboard-only walkthrough: focus the tour, advance and reverse
+                        # with arrow keys, and verify accessible progress state.
+                        page.locator("#restart").click()
+                        page.locator("#tour").focus()
+                        page.keyboard.press("ArrowRight")
+                        assert "02 / 06" in page.locator("#number").inner_text(), "Keyboard right arrow failed"
+                        assert page.locator("#progress").get_attribute("aria-valuenow") == "2", "Progress value failed"
+                        page.keyboard.press("ArrowLeft")
+                        assert "01 / 06" in page.locator("#number").inner_text(), "Keyboard left arrow failed"
+                        assert page.locator("#progress").get_attribute("aria-valuenow") == "1", "Progress reset failed"
+                    if name in {"guided-demo", "ai-implementation", "ai-implementation-careers",
+                                "automation-operations", "technical-customer-success"}:
+                        # Minimum touch target dimensions for visible interactive controls.
+                        # Record undersized targets for manual review rather than treating
+                        # dense inline text links as a proven WCAG failure.
+                        touch = page.evaluate("""() => [...document.querySelectorAll('button,a[href]')]
+                          .filter(e => e.getClientRects().length > 0)
+                          .map(e => { const r=e.getBoundingClientRect(); return {
+                            text:(e.innerText||e.getAttribute('aria-label')||'').trim().slice(0,70),
+                            width:Math.round(r.width), height:Math.round(r.height)
+                          }; }).filter(x => x.width < 24 || x.height < 24)""")
+                        if viewport == "mobile":
+                            (OUT / f"{name}-touch-targets.json").write_text(
+                                json.dumps(touch, indent=2) + "\\n", encoding="utf-8")
                     if name == "ai-implementation":
                         assert page.locator("[data-step]").count() == 5, "Five architecture stages required"
                         page.locator('[data-step="4"]').click()
