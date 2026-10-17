@@ -24,6 +24,11 @@ PAGES = {
     "automation-lab": "automation-lab/",
     "workflow-studio": "workflow-studio/",
     "implementation-dashboard": "implementation-dashboard/",
+    "guided-demo": "guided-demo/",
+    "ai-implementation": "ai-implementation/",
+    "ai-implementation-careers": "ai-implementation-careers/",
+    "automation-operations": "automation-operations/",
+    "technical-customer-success": "technical-customer-success/",
 }
 VIEWPORTS = {"desktop": (1440, 900), "mobile": (390, 844)}
 
@@ -85,8 +90,29 @@ def main():
                         assert page.locator("h1").inner_text() == "Ashton Simmons", "One-pager heading missing"
                         assert page.locator('a[href="control-room/"]').count() == 1, "Featured project link missing"
                     if name == "recruiter-case-studies":
-                        assert page.locator("section.card").count() == 3, "Expected three case studies"
+                        assert page.locator("section.card").count() == 4, "Expected four case studies"
                         assert page.locator('a[href="control-room/"]').count() >= 1, "Control Room proof missing"
+                    if name == "guided-demo":
+                        assert page.locator("#tour-heading").count() == 1, "Guided demo heading missing"
+                        assert page.locator(".dot").count() == 6, "Six tour chapters required"
+                        page.locator("#next").click()
+                        assert "02 / 06" in page.locator("#number").inner_text(), "Next chapter did not advance"
+                        page.locator("#prev").click()
+                        assert "01 / 06" in page.locator("#number").inner_text(), "Previous chapter did not return"
+                        page.locator("#restart").click()
+                        assert page.locator("#prev").is_disabled(), "Restart did not reset state"
+                        for _ in range(5):
+                            page.locator("#next").click()
+                        assert page.locator("#next").is_disabled(), "Tour should stop at chapter six"
+                        assert page.locator("#status").inner_text().startswith("Chapter 6 of 6"), "Final status missing"
+                    if name == "ai-implementation":
+                        assert page.locator("[data-step]").count() == 5, "Five architecture stages required"
+                        page.locator('[data-step="4"]').click()
+                        assert page.locator('[data-step="4"]').get_attribute("aria-pressed") == "true", "Architecture selection failed"
+                        assert "Human quality evaluation" in page.locator("#detail-title").inner_text(), "Quality explanation missing"
+                    if name in {"ai-implementation-careers", "automation-operations", "technical-customer-success"}:
+                        assert page.locator("h1").count() == 1, "Recruiter page must have one main heading"
+                        assert page.locator('a[href="../guided-demo/"]').count() >= 1, "Guided demo entry missing"
                     for href in page.locator("a[href]").evaluate_all(
                         "(anchors) => anchors.map(a => a.getAttribute('href'))"
                     ):
