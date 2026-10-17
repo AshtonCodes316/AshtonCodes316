@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
 **Updated:** October 17, 2026  
-**Status:** Existing browser suite has verified successful GitHub Actions runs. A separate axe-core accessibility audit has now been committed, but its result is not yet confirmed.
+**Status:** Browser suite and automated axe-core audit **PASS** at commit `ba268edf` (October 17, 2026); GitHub Pages deployment **PASS** for the same commit. Manual accessibility and physical-device verification remain outstanding.
 
 ## What the existing browser suite checks
 
@@ -21,16 +21,19 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 
 **Scope:** These are basic programmatic checks, not a comprehensive WCAG 2.2 AA audit. They do not establish screen-reader compatibility, keyboard usability for every widget, color contrast compliance, real-device performance, or cross-browser support.
 
-## Confirmed browser-test evidence
+## Confirmed browser-test and deployment evidence
+
+- [Browser + axe-core accessibility workflow PASS — commit ba268edf](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076058122).
+- [GitHub Pages deployment PASS — commit ba268edf](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39076058252).
 
 - [Successful GitHub Actions run for commit a3b19d3c](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39051527779) — completed successfully on October 17, 2026.
 - [Successful GitHub Actions run for commit 8f67c593](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39051516228) — includes accessibility smoke checks.
 - [Successful GitHub Actions run for commit 5839b9f4](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39051363565) — browser suite on push.
-- **Not yet verified:** the newly added axe-core audit, its violations/incomplete results, and a passing workflow for the latest commit.
+- **Verified:** The axe-core audit passed on `ba268edf` after correcting the guided tour's ARIA progress indicator. This confirms zero *blocking automated violations* in that run; any axe `incomplete` items still require human review.
 
 ## Dedicated accessibility audit
 
-The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10.3 in Chromium against local pages, checks WCAG 2.0/2.1/2.2 A/AA-tagged rules at desktop and mobile viewports, and writes `browser-evidence/axe-accessibility-report.json`. The GitHub Actions job is configured to fail if any violations are reported. This is a new check, not an already confirmed pass; manual review remains necessary.
+The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10.3 in Chromium against local pages, checks WCAG 2.0/2.1/2.2 A/AA-tagged rules at desktop and mobile viewports, and writes `browser-evidence/axe-accessibility-report.json`. The GitHub Actions job is configured to fail if any violations are reported. The check passed in the GitHub Actions run linked above; manual review remains necessary.
 
 ## Pages added to automated coverage
 
@@ -54,12 +57,14 @@ Existing pages remain in the same suite. The case-study hub assertion was update
 ## Outstanding release criteria
 
 - [x] Confirm a completed, passing GitHub Actions browser-suite run (a3b19d3c).
-- [ ] Confirm a passing run of the newly added axe-core audit.
+- [x] Confirm a passing run of the newly added axe-core audit (`ba268edf`).
 - [ ] Review mobile and desktop screenshots for clipping and readability.
 - [ ] Perform keyboard-only navigation on the new pages.
-- [ ] Review results of the newly configured axe-core audit and remediate any violations.
+- [x] Resolve the blocking guided-tour ARIA violation and confirm the automated audit passes.
+- [ ] Review any incomplete/manual-review items in the axe evidence artifact.
 - [ ] Perform at least one real-device iPhone visual check.
-- [ ] Verify the public GitHub Pages deployment matches the tested commit.
+- [x] Confirm GitHub Pages deployment workflow succeeded for tested commit `ba268edf`.
+- [ ] Independently compare the live rendered site with the tested commit.
 
 ## Evidence boundaries
 
