@@ -1,5 +1,11 @@
 name: Portfolio browser screenshots
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/portfolio-screenshots.yml'
+      - 'docs/**'
+      - 'scripts/capture_portfolio.py'
   pull_request:
     paths:
       - '.github/workflows/portfolio-screenshots.yml'
