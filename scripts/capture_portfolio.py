@@ -94,6 +94,7 @@ def main():
                         assert page.locator('a[href="control-room/"]').count() >= 1, "Control Room proof missing"
                     if name == "guided-demo":
                         assert page.locator("#tour-heading").count() == 1, "Guided demo heading missing"
+                        assert page.locator('a[href="https://www.linkedin.com/in/ashton-simmons-406793393/"]').count() >= 1, "Recruiter contact link missing"
                         assert page.locator(".dot").count() == 6, "Six tour chapters required"
                         page.locator("#next").click()
                         assert "02 / 06" in page.locator("#number").inner_text(), "Next chapter did not advance"
