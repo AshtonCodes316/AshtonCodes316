@@ -26,6 +26,16 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 > **My philosophy:** Make the system ambitious. Make the claims precise. Make the results verifiable.
 
+## 🎯 Recruiter fast track — AI implementation & technical customer success
+
+I am studying **Computer Information Systems** and bring hands-on **customer service, sales, and business operations** experience to AI-assisted workflow projects. I am pursuing U.S.-remote, early-career opportunities in **AI enablement, automation operations, SaaS onboarding, implementation, and technical customer success**.
+
+**See the evidence, not just the claims:** [60-second recruiter guide](docs/recruiter.md) · [Working browser demos](#-recruiter-ready-interactive-portfolio) · [Master Key technical case study](docs/master-key.md) · [Skills-to-job matrix](docs/technical-skills-career.md).
+
+**Recent private-project milestone (self-reported, October 2026):** Master Key ran three bounded missions using a local Ollama/Qwen2.5-Coder 7B model. Its adapter passed 12 qualification scenarios and 613 targeted regression tests in the reported run, with Wallet Lock engaged and no paid API calls. **Important limitation:** code-review findings were mostly inaccurate; the adapter was uncommitted and not production-enrolled at that checkpoint, and no independent security audit occurred. This demonstrates a *local AI integration experiment*, not a reliable code-review service or an autonomous production workforce. [Full context](docs/master-key.md).
+
+---
+
 ## 🚀 Featured projects
 
 **Start with three implementation case studies:** [Case study hub](https://ashtoncodes316.github.io/AshtonCodes316/recruiter-case-studies.html) · [90-second walkthrough script](docs/90-second-walkthrough.md)
