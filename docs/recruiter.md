@@ -8,6 +8,17 @@
 
 [**One-page recruiter profile**](recruiter-one-pager.html) · [**LinkedIn and outreach kit**](career-outreach-kit.md) · [**Interactive Control Room**](control-room/) · [LinkedIn profile](https://www.linkedin.com/in/ashton-simmons-406793393/)
 
+## Quick match to current job openings
+
+| Hiring need | Relevant experience | Evidence and honest boundary |
+|---|---|---|
+| **AI enablement / implementation** | Translate operational requirements into governed workflows and explain outcomes | [Master Key local AI checkpoint](master-key.md): bounded adapter tests; **model review accuracy failed** |
+| **Automation associate / AI operations** | Workflow states, approval gates, failure handling and documentation | [Public governance example](../examples/mk-governance/README.md): runnable educational simulation, not production MK |
+| **SaaS onboarding / implementation specialist** | Customer-facing operations, structured handoffs and training-oriented workflow design | [Implementation simulator](../examples/implementation-simulator/README.md): fictional-data demo with tests |
+| **Technical customer success** | Communication, troubleshooting, incident documentation and customer-process thinking | [Engineering case study](mk-engineering-case-study.md) and [skills matrix](technical-skills-career.md) |
+
+**Interview-ready distinction:** I can explain why a local AI adapter passing technical tests is not the same as an AI model giving accurate answers. The reported Qwen 7B code-review trial produced mostly incorrect or trivial findings; I would restrict that capability until quality benchmarks pass. These are project experiences, not claims of professional AI engineering employment.
+
 ## Verify the engineering in 60 seconds
 
 1. [Open the public governance code and test suite](../examples/mk-governance/README.md) — inspect human approval, fail-closed behavior, and deterministic receipts.
