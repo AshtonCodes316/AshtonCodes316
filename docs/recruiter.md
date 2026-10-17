@@ -4,6 +4,16 @@
 
 [**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
+## Choose a recruiter experience
+
+**[Guided six-chapter portfolio demo](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** — interactive browser presentation, not a video.
+
+- [AI Implementation](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation-careers/) — AI task design, qualification, output evaluation.
+- [Automation Operations](https://ashtoncodes316.github.io/AshtonCodes316/automation-operations/) — operational handoffs, exceptions, documentation.
+- [Technical Customer Success](https://ashtoncodes316.github.io/AshtonCodes316/technical-customer-success/) — onboarding, troubleshooting, communication.
+
+These pages reuse existing portfolio demonstrations and do not claim customer deployments or production AI capabilities.
+
 ## Contact and application materials
 
 [**One-page recruiter profile**](recruiter-one-pager.html) · [**LinkedIn and outreach kit**](career-outreach-kit.md) · [**Interactive Control Room**](control-room/) · [LinkedIn profile](https://www.linkedin.com/in/ashton-simmons-406793393/)
