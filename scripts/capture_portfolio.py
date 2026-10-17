@@ -130,7 +130,7 @@ def main():
                           }; }).filter(x => x.width < 24 || x.height < 24)""")
                         if viewport == "mobile":
                             (OUT / f"{name}-touch-targets.json").write_text(
-                                json.dumps(touch, indent=2) + "\\n", encoding="utf-8")
+                                json.dumps(touch, indent=2) + "\n", encoding="utf-8")
                     if name == "ai-implementation":
                         assert page.locator("[data-step]").count() == 5, "Five architecture stages required"
                         page.locator('[data-step="4"]').click()
