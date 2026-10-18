@@ -46,6 +46,12 @@ The axe report contains `incomplete` entries, including color-contrast evaluatio
 
 **Artifact format correction:** The initial touch-target JSON files had an extra literal `\\n` after the JSON payload. This was corrected in the screenshot runner in commit `a3647f06`; the subsequent run must confirm the files parse directly.
 
+## Verified mobile target improvement — October 17, 2026
+
+Compared the actual mobile touch-target JSON files in the [earlier passing run 39079671905](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39079671905) against the [new passing run 39080265059](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39080265059). **31 flagged controls became 0** across the five tested pages at a 390-pixel browser viewport. Counts by page: guided demo **9 → 0**, AI implementation **5 → 0**, AI implementation careers **7 → 0**, automation operations **5 → 0**, technical customer success **5 → 0**. The JSON files in the latest artifact parse successfully. Both the browser workflow and [GitHub Pages deployment](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39080264899) passed at commit `06c6a173`.
+
+This metric uses the project's under-24-CSS-pixel candidate heuristic. It is **not** a WCAG conformance assessment, a physical-touchscreen test, or evidence that all mobile controls meet a 44-pixel design target. The axe report still contains incomplete contrast and ARIA items requiring human review.
+
 ## Dedicated accessibility audit
 
 The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10.3 in Chromium against local pages, checks WCAG 2.0/2.1/2.2 A/AA-tagged rules at desktop and mobile viewports, and writes `browser-evidence/axe-accessibility-report.json`. The GitHub Actions job is configured to fail if any violations are reported. The check passed in the GitHub Actions run linked above; manual review remains necessary.
