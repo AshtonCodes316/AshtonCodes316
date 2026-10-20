@@ -6,8 +6,9 @@
 <meta name="theme-color" content="#091322">
 <meta name="description" content="AI-Native Application Development recruiter track for Ashton Simmons — TipFlow, product engineering, and practical software prototypes.">
 <title>AI-Native Application Development | Ashton Simmons</title>
+<link rel="stylesheet" href="../assets/brand-tokens.css">
 <style>
-:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--mint:#84f1cf;--violet:#b4a9ff;--text:#f1f8ff;--muted:#c8d9e9}
+:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--text:var(--ink)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(ellipse at 78% 0,#2c4064,transparent 48%),radial-gradient(ellipse at 12% 55%,#16324a,transparent 52%),#091322;color:var(--text);line-height:1.65}
 a{color:#a7ebff}a:focus-visible{outline:3px solid var(--mint);outline-offset:4px}
@@ -27,8 +28,8 @@ section{padding:34px 0}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .card{padding:22px;border-radius:16px;border:1px solid #3d5d77;background:linear-gradient(145deg,#192d47,#102034)}
 .card p{color:var(--muted)}.card h3{margin:6px 0 10px}
-.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid #5f849a;border-radius:999px;padding:4px 10px;color:#d7f0ff;margin-bottom:10px}
-.badge.tested{border-color:#84f1cf;color:#84f1cf}.badge.prototype{border-color:#b4a9ff;color:#b4a9ff}.badge.planned{border-color:#8aa0b5;color:#a9bdd0}.badge.implemented{border-color:#7ec8ff;color:#7ec8ff}
+/* .badge layout may remain below; colors from brand-tokens.css */
+
 .table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.95rem}
 .table th,.table td{text-align:left;padding:12px 10px;border-bottom:1px solid #35516a;vertical-align:top}
 .table th{color:var(--mint);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
@@ -36,7 +37,7 @@ section{padding:34px 0}
 footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 @media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding:42px 0 24px}.table{display:block;overflow-x:auto}}
 @media(max-width:600px){nav a,.links a,.card a,footer a,main p a{display:inline-block;padding:8px 4px;min-height:44px}.btn{display:block;text-align:center;margin:8px 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* prefers-reduced-motion + prefers-contrast: brand-tokens.css */
 </style>
 </head>
 <body>
@@ -67,38 +68,38 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <h2 id="projects-title">Real projects, honest status</h2>
 <div class="grid">
 <article class="card">
-<span class="badge implemented">Implemented prototype</span>
+<span class="badge implemented">Implemented</span><span class="badge prototype">Prototype</span><span class="qualifier">local Streamlit · not production</span>
 <h3>TipFlow</h3>
 <p>Local Streamlit financial operating-system concept for tipped workers. Iterated through modular V8 architecture: shifts, goals, finance views, forecasting helpers, and report generation against SQLite.</p>
 <p><strong>Not claimed:</strong> production users, revenue, cloud deployment, or public demo hosting.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/tipflow.md">Read TipFlow case study ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Implemented · research checkpoint</span>
+<span class="badge implemented">Implemented</span><span class="badge tested">Tested</span><span class="qualifier">research checkpoint · no live trading</span>
 <h3>Bubba Bucks</h3>
 <p>AI-assisted quantitative research infrastructure: universes, historical data requests, validation, synthetic datasets, and observatory CLI. Observation and research only—no live trading.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/bubba-bucks.md">Read Bubba Bucks case study ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Architecture documented</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">architecture documented</span>
 <h3>TourneyNest</h3>
 <p>SwiftUI-oriented family execution app concept for youth travel sports: Schedule → Prepare → Play → Reset. Native device verification still deferred.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/tourneynest.md">Read TourneyNest case study ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Concept / docs reviewed</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">concept / docs reviewed</span>
 <h3>ApplyForge</h3>
 <p>Local-first job application copilot concept for analyzing jobs, tailoring applications, and tracking opportunities. Public demo pending review.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/applyforge.md">Read ApplyForge case study ↗</a>
 </article>
 <article class="card">
-<span class="badge planned">Overview pending</span>
+<span class="badge planned">Planned</span><span class="qualifier">public overview pending</span>
 <h3>Merriwisp</h3>
 <p>Private repository confirmed. Public scope and visuals deferred until an implementation review completes.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/merriwisp.md">Status page ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Orchestration product (private)</span>
+<span class="badge implemented">Implemented</span><span class="badge prototype">Prototype</span><span class="qualifier">private orchestration product</span>
 <h3>The Master Key</h3>
 <p>Founder-directed AI operations architecture. Featured primarily on the Orchestration track; included here as the flagship AI-native systems product under development.</p>
 <a href="../ai-orchestration/">Open orchestration track ↗</a>

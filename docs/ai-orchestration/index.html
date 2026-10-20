@@ -6,8 +6,9 @@
 <meta name="theme-color" content="#091322">
 <meta name="description" content="AI Orchestration and Agentic Systems recruiter track for Ashton Simmons — governed missions, human approval, and verifiable evidence.">
 <title>AI Orchestration / Agentic Systems | Ashton Simmons</title>
+<link rel="stylesheet" href="../assets/brand-tokens.css">
 <style>
-:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--mint:#84f1cf;--violet:#b4a9ff;--text:#f1f8ff;--muted:#c8d9e9}
+:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--text:var(--ink)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(ellipse at 82% 0,#2a4468,transparent 48%),radial-gradient(ellipse at 8% 30%,#12383f,transparent 55%),#091322;color:var(--text);line-height:1.65}
 a{color:#a7ebff}a:focus-visible,button:focus-visible{outline:3px solid var(--mint);outline-offset:4px}
@@ -17,7 +18,7 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-
 nav a{text-decoration:none}.brand{font-weight:900;letter-spacing:.13em;color:#fff}
 .links{display:flex;gap:14px;flex-wrap:wrap}
 .hero{padding:72px 0 36px;position:relative}
-.hero:before{content:"";position:absolute;right:0;top:20px;width:220px;height:220px;border:1px solid #84f1cf44;border-radius:50%;box-shadow:0 0 0 40px #84f1cf0c,0 0 0 90px #b4a9ff0a;pointer-events:none}
+.hero:before{content:"";position:absolute;right:0;top:20px;width:220px;height:220px;border:1px solid var(--accent-soft);border-radius:50%;box-shadow:0 0 0 40px var(--accent-soft),0 0 0 90px var(--violet-soft);pointer-events:none}
 .eyebrow{color:var(--mint);font-size:.75rem;letter-spacing:.16em;font-weight:900;text-transform:uppercase}
 h1{font-size:clamp(2.5rem,5.8vw,4.8rem);line-height:1.05;letter-spacing:-.055em;max-width:920px;margin:16px 0}
 h2{font-size:clamp(1.55rem,3vw,2.25rem);letter-spacing:-.035em;margin:0 0 14px}
@@ -28,15 +29,15 @@ section{padding:34px 0}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .card{padding:22px;border-radius:16px;border:1px solid #3d5d77;background:linear-gradient(145deg,#192d47,#102034)}
 .card p,.card li{color:var(--muted)}.card h3{margin:6px 0 10px}
-.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid #5f849a;border-radius:999px;padding:4px 10px;color:#d7f0ff;margin-bottom:10px}
-.badge.tested{border-color:#84f1cf;color:#84f1cf}.badge.prototype{border-color:#b4a9ff;color:#b4a9ff}.badge.planned{border-color:#8aa0b5;color:#a9bdd0}
+/* .badge layout may remain below; colors from brand-tokens.css */
+
 .maturity{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .maturity article{border:1px solid #3d5d77;border-radius:14px;padding:18px;background:#101f34}
 .notice{padding:18px 22px;border-left:4px solid var(--mint);background:#153140;border-radius:0 10px 10px 0;color:#d4ebeb}
 footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 @media(max-width:800px){.grid,.maturity{grid-template-columns:1fr}.hero:before{display:none}.hero{padding:42px 0 24px}}
 @media(max-width:600px){nav a,.links a,.card a,footer a,main p a{display:inline-block;padding:8px 4px;min-height:44px;line-height:1.5}.btn{display:block;text-align:center;margin:8px 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* prefers-reduced-motion + prefers-contrast: brand-tokens.css */
 </style>
 </head>
 <body>
@@ -67,17 +68,17 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <h2 id="capabilities">What this track shows</h2>
 <div class="grid">
 <article class="card">
-<span class="badge tested">Documented + tested (targeted)</span>
+<span class="badge tested">Tested</span><span class="qualifier">targeted · documented</span>
 <h3>Governed mission lifecycles</h3>
 <p>Translate a business request into scoped tasks, explicit states, and completion criteria before dispatching work.</p>
 </article>
 <article class="card">
-<span class="badge tested">Documented + simulated</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">documented · simulated approval</span>
 <h3>Human approval boundaries</h3>
 <p>Consequential steps require a simulated approve/reject decision with a downloadable audit trail in the public Control Room.</p>
 </article>
 <article class="card">
-<span class="badge prototype">Local experiment</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">local experiment · not production-enrolled</span>
 <h3>Agent quality judgment</h3>
 <p>A local-model worker can pass integration tests and still fail usefulness checks. Qualification is held until quality improves.</p>
 </article>
@@ -89,37 +90,37 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <h2 id="evidence-title">Projects and demos for this track</h2>
 <div class="grid">
 <article class="card">
-<span class="badge tested">Implemented · targeted tests</span>
+<span class="badge implemented">Implemented</span><span class="badge tested">Tested</span><span class="qualifier">targeted local checkpoints</span>
 <h3>The Master Key</h3>
 <p>Private orchestration system with documented architecture, permission-aware workflows, and dated local verification checkpoints. Not a production autonomous workforce.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/master-key.md">Read Master Key case study ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Browser prototype</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">browser-only</span>
 <h3>Orchestration Atlas</h3>
 <p>Keyboard-accessible six-stage explainer: request → plan → worker → approval → evidence → result. Educational model only.</p>
 <a href="../orchestration-atlas/">Explore the atlas ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Browser prototype</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">browser-only</span>
 <h3>Control Room</h3>
 <p>Deterministic scenario walkthrough with human approval/rejection and JSON export. Not connected to private MK or live models.</p>
 <a href="../control-room/">Launch Control Room ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Public code + CI</span>
+<span class="badge tested">Tested</span><span class="qualifier">public code · CI</span>
 <h3>Governance example</h3>
 <p>Standalone Python educational simulation with automated tests for approval gates and fail-closed receipts.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/tree/main/examples/mk-governance">Inspect public source ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Interactive case study</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">interactive case study</span>
 <h3>When tests pass but answers fail</h3>
 <p>Five-stage story of local Ollama/Qwen integration: technical qualification vs. inadequate code-review quality.</p>
 <a href="../ai-implementation/">Open interactive case study ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Documented investigation</span>
+<span class="badge implemented">Implemented</span><span class="qualifier">documented investigation</span>
 <h3>Authorization regression study</h3>
 <p>How a failing authorization suite drove isolation, scope normalization, and a hold on integration.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/mk-engineering-case-study.md">Read engineering write-up ↗</a>

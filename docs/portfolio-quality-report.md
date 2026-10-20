@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
 **Updated:** October 19, 2026  
-**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** historically through commit `06c6a173` / related October 17 runs. **MISSION GITHUB-GODTIER-002** added three recruiter tracks and upgraded the guided demo. **Local Playwright capture (this machine, Oct 19, 2026):** `python scripts/capture_portfolio.py` → **32 screenshots, 0 failures**; new-track mobile touch-target JSONs were empty (`[]`). A fresh CI run on `main` after Founder-approved push is still required before claiming GitHub Actions verification for the new pages. Manual accessibility and physical-device verification remain outstanding.
+**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** historically through commit `06c6a173` / related October 17 runs. **MISSION GITHUB-GODTIER-002** added three recruiter tracks and upgraded the guided demo. **MISSION GITHUB-GODTIER-003 (MUSE-BRAND-002):** consolidated accent token to `#74ecc5`, standardized maturity badges (`Implemented` / `Tested` / `Prototype` / `Planned`), removed AI-native-apps blue badge accent, and shared `prefers-contrast` / `prefers-reduced-motion` via `docs/assets/brand-tokens.css`. **Local Playwright capture after brand consolidation:** `python scripts/capture_portfolio.py` → **32 screenshots, 0 failures**; touch-target JSONs empty (`[]`). A fresh CI run on `main` after Founder-approved push is still required. Manual accessibility and physical-device verification remain outstanding.
 
 ## What the existing browser suite checks
 

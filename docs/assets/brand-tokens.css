@@ -1,0 +1,75 @@
+/* MUSE-BRAND-002 / GITHUB-GODTIER-003 — shared design tokens
+   Canonical accent consolidates prior mint variants (#74ecc5, #84f1cf, #8af1d1, #75efc8)
+   and removes the AI-native-apps blue badge accent (#7ec8ff). */
+:root{
+  --accent:#74ecc5;
+  --accent-ink:#09251d;
+  --accent-soft:#74ecc544;
+  --accent-glow:#74ecc510;
+  --violet:#a9a0ff;
+  --violet-soft:#a9a0ff0b;
+  --ink:#f1f8ff;
+  --muted:#c2d2e5;
+  --line:#36516d;
+  --surface:#14263e;
+  --bg:#091222;
+  /* Aliases so existing inline rules keep working after token consolidation */
+  --mint:var(--accent);
+  --glow:var(--accent);
+  --mk-mint:var(--accent);
+  --mk-violet:var(--violet);
+}
+
+/* Maturity badges — classification only; use .qualifier for nuance */
+.badge{
+  display:inline-block;
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  border:1px solid #5f849a;
+  border-radius:999px;
+  padding:4px 10px;
+  color:#d7f0ff;
+  margin-bottom:8px;
+  margin-right:6px;
+}
+.badge.implemented{border-color:var(--accent);color:var(--accent)}
+.badge.tested{border-color:var(--accent);color:var(--accent);background:#74ecc514}
+.badge.prototype{border-color:var(--violet);color:var(--violet)}
+.badge.planned{border-color:#8aa0b5;color:#a9bdd0}
+.qualifier{
+  display:block;
+  font-size:.78rem;
+  font-weight:600;
+  letter-spacing:.02em;
+  text-transform:none;
+  color:var(--muted);
+  margin:2px 0 10px;
+}
+
+/* Shared accessibility preferences (all five surfaces) */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+  .btn:hover,.card:hover,button:not(:disabled):hover{transform:none!important}
+}
+@media(prefers-contrast:more){
+  :root{--muted:#e8f1fa;--line:#b2c8e2;--ink:#ffffff}
+  body{color:#fff}
+  .card,.panel,.project,.open-card,.maturity article,.signature,.hire-panel,.notice,.disclosure{
+    border-color:#b2c8e2!important;
+  }
+  .lead,.meta,.subtle,p{color:#f1f6ff!important}
+  .badge{border-width:2px}
+  a{text-decoration:underline}
+  a:focus-visible,button:focus-visible,.btn:focus-visible{
+    outline:3px solid #fff!important;
+    outline-offset:3px;
+  }
+}

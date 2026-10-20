@@ -1,5 +1,5 @@
 /* Shared portfolio identity — static and dependency-free */
-:root{--mk-bg:#091222;--mk-panel:#14243b;--mk-line:#395572;--mk-mint:#74ecc5;--mk-violet:#a9a0ff;--mk-text:#edf5ff;--mk-muted:#c2d2e5}
+:root{--mk-bg:#091222;--mk-panel:#14243b;--mk-line:#395572;--mk-mint:var(--accent,#74ecc5);--mk-violet:var(--violet,#a9a0ff);--mk-text:#edf5ff;--mk-muted:#c2d2e5}
 html{scroll-behavior:smooth}body{font-family:Inter,system-ui,Segoe UI,sans-serif!important;color:var(--mk-text)!important;background:radial-gradient(ellipse 65% 40% at 85% 0%,#283b60 0%,transparent 76%),radial-gradient(ellipse 50% 35% at 5% 18%,#12383b 0%,transparent 78%),var(--mk-bg)!important;-webkit-font-smoothing:antialiased}
 main{max-width:1160px!important}.portfolio-nav{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:14px 0 18px;margin-bottom:30px;border-bottom:1px solid var(--mk-line);font-size:.9rem}
 .portfolio-nav .portfolio-wordmark{font-weight:850;letter-spacing:.12em;color:#fff;text-decoration:none}.portfolio-nav .portfolio-wordmark span{color:var(--mk-mint)}
@@ -13,3 +13,5 @@ input,select,textarea{border-radius:10px!important}pre{border:1px solid #304761;
 .portfolio-footnote{margin-top:30px;padding-top:16px;border-top:1px solid var(--mk-line);color:var(--mk-muted);font-size:.85rem}
 @media(max-width:700px){.portfolio-nav{align-items:flex-start}.portfolio-links{gap:10px 14px}.portfolio-nav .portfolio-wordmark{width:100%}main{padding-left:18px!important;padding-right:18px!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button{transition:none}button:not(:disabled):hover{transform:none}}
+
+@media(prefers-contrast:more){.card,.portfolio-nav{border-color:#b2c8e2!important}body,.portfolio-footnote{color:#f1f6ff!important}}

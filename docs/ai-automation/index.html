@@ -6,8 +6,9 @@
 <meta name="theme-color" content="#091322">
 <meta name="description" content="AI Automation and Solutions Engineering recruiter track for Ashton Simmons — workflow design, approvals, handoffs, and verifiable prototypes.">
 <title>AI Automation / Solutions Engineering | Ashton Simmons</title>
+<link rel="stylesheet" href="../assets/brand-tokens.css">
 <style>
-:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--mint:#84f1cf;--text:#f1f8ff;--muted:#c8d9e9}
+:root{color-scheme:dark;font-family:"Segoe UI",system-ui,sans-serif;--text:var(--ink)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(ellipse at 85% 0,#243d62,transparent 46%),radial-gradient(ellipse at 10% 40%,#0f3a36,transparent 50%),#091322;color:var(--text);line-height:1.65}
 a{color:#a7ebff}a:focus-visible{outline:3px solid var(--mint);outline-offset:4px}
@@ -27,8 +28,8 @@ section{padding:34px 0}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .card{padding:22px;border-radius:16px;border:1px solid #3d5d77;background:linear-gradient(145deg,#192d47,#102034)}
 .card p{color:var(--muted)}.card h3{margin:6px 0 10px}
-.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid #5f849a;border-radius:999px;padding:4px 10px;color:#d7f0ff;margin-bottom:10px}
-.badge.tested{border-color:#84f1cf;color:#84f1cf}.badge.prototype{border-color:#b4a9ff;color:#b4a9ff}.badge.planned{border-color:#8aa0b5;color:#a9bdd0}
+/* .badge layout may remain below; colors from brand-tokens.css */
+
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}
 .steps article{border:1px solid #3d5d77;border-radius:12px;padding:16px;background:#101f34;font-size:.92rem}
 .steps strong{display:block;color:var(--mint);margin-bottom:6px;font-size:.72rem;letter-spacing:.1em}
@@ -36,7 +37,7 @@ section{padding:34px 0}
 footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 @media(max-width:900px){.grid,.steps{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.grid,.steps{grid-template-columns:1fr}.hero{padding:42px 0 24px}nav a,.links a,.card a,footer a,main p a{display:inline-block;padding:8px 4px;min-height:44px}.btn{display:block;text-align:center;margin:8px 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* prefers-reduced-motion + prefers-contrast: brand-tokens.css */
 </style>
 </head>
 <body>
@@ -78,37 +79,37 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <h2 id="evidence-title">Demos and case studies for this track</h2>
 <div class="grid">
 <article class="card">
-<span class="badge prototype">Browser prototype · founder-tested</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">founder-tested smoke · fictional data</span>
 <h3>Automation Lab</h3>
 <p>Classify a fictional support request, show blocked vs approved drafting, and export a local JSON receipt. Rule-based—no live AI.</p>
 <a href="../automation-lab/">Try Automation Lab ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Browser prototype · founder-tested</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">founder-tested smoke · fictional data</span>
 <h3>Workflow Studio</h3>
 <p>Customer onboarding intake, readiness validation, blockers, owner assignment, and human sign-off with downloadable receipts.</p>
 <a href="../workflow-studio/">Try Workflow Studio ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Browser prototype · founder-tested</span>
+<span class="badge prototype">Prototype</span><span class="qualifier">founder-tested smoke · fictional data</span>
 <h3>Implementation Dashboard</h3>
 <p>Five milestones, blockers, simulated owner assignment, and a go-live approval gate. No deployment or customer CRM.</p>
 <a href="../implementation-dashboard/">Try Implementation Dashboard ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Public code + tests</span>
+<span class="badge tested">Tested</span><span class="qualifier">public code · tests</span>
 <h3>Implementation simulator</h3>
 <p>Python onboarding simulator with a documented 24-scenario matrix, retry/escalation behavior, and CI history.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/implementation-simulator-case-study.md">Read case study ↗</a>
 </article>
 <article class="card">
-<span class="badge tested">Public code + CI</span>
+<span class="badge tested">Tested</span><span class="qualifier">public code · CI</span>
 <h3>Governance automation example</h3>
 <p>Educational approval-gate simulation with fail-closed behavior and deterministic evidence receipts.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/tree/main/examples/mk-governance">Inspect source ↗</a>
 </article>
 <article class="card">
-<span class="badge prototype">Documented use cases</span>
+<span class="badge planned">Planned</span><span class="qualifier">documented examples · not deployed ROI</span>
 <h3>Business automation map</h3>
 <p>Proposed support triage, handoffs, and validation workflows—clearly labeled as examples, not deployed ROI.</p>
 <a href="https://github.com/AshtonCodes316/AshtonCodes316/blob/main/docs/business-automation.md">Read use cases ↗</a>
@@ -120,9 +121,9 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <div class="eyebrow">Maturity labels</div>
 <h2 id="maturity">What is real vs. simulated</h2>
 <div class="grid">
-<article class="card"><span class="badge tested">Implemented</span><h3>Browser demos + Python examples</h3><p>Three interactive workflow prototypes and two public test suites with documented limitations.</p></article>
-<article class="card"><span class="badge tested">Tested</span><h3>Scenario coverage + CI</h3><p>Implementation simulator scenarios and governance example tests run in GitHub Actions. Browser QA captures demos.</p></article>
-<article class="card"><span class="badge planned">Planned</span><h3>Live integrations</h3><p>No Zapier/CRM/production customer deployments or measured business ROI are claimed.</p></article>
+<article class="card"><span class="badge implemented">Implemented</span><span class="qualifier">browser demos + Python examples</span><h3>Browser demos + Python examples</h3><p>Three interactive workflow prototypes and two public test suites with documented limitations.</p></article>
+<article class="card"><span class="badge tested">Tested</span><span class="qualifier">scenario coverage · CI</span><h3>Scenario coverage + CI</h3><p>Implementation simulator scenarios and governance example tests run in GitHub Actions. Browser QA captures demos.</p></article>
+<article class="card"><span class="badge planned">Planned</span><span class="qualifier">no live CRM/Zapier claims</span><h3>Live integrations</h3><p>No Zapier/CRM/production customer deployments or measured business ROI are claimed.</p></article>
 </div>
 </section>
 
