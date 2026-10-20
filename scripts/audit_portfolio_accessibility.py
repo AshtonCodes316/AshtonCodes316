@@ -22,7 +22,11 @@ PAGES = {
     "ai-implementation-careers": "ai-implementation-careers/",
     "automation-operations": "automation-operations/",
     "technical-customer-success": "technical-customer-success/",
+    "ai-orchestration": "ai-orchestration/",
+    "ai-automation": "ai-automation/",
+    "ai-native-apps": "ai-native-apps/",
     "recruiter-case-studies": "recruiter-case-studies.html",
+    "recruiter-one-pager": "recruiter-one-pager.html",
 }
 VIEWPORTS = {"desktop": (1440, 900), "mobile": (390, 844)}
 

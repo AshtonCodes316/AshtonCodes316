@@ -6,16 +6,26 @@
 
 ---
 
+## Recruiter tracks
+
+| Track | Landing page |
+|---|---|
+| A · AI Orchestration / Agentic Systems | [Open](ai-orchestration/) |
+| B · AI Automation / Solutions Engineering | [Open](ai-automation/) |
+| C · AI-Native Application Development | [Open](ai-native-apps/) |
+
+[Guided portfolio demo](guided-demo/) · [Maturity vocabulary](project-status.md)
+
 ## Featured work
 
-| Project | Focus | Public case study |
-|---|---|---|
-| **The Master Key** | Human-governed AI orchestration | [Explore](master-key.md) |
-| **TipFlow** | Financial software for tipped workers | [Explore](tipflow.md) |
-| **Bubba Bucks** | Quantitative research infrastructure | [Explore](bubba-bucks.md) |
-| **TourneyNest** | Sports-family planning architecture | [Explore](tourneynest.md) |
-| **ApplyForge** | Local-first application workflow tools | [Explore](applyforge.md) |
-| **Merriwisp** | Additional project under review | [Explore](merriwisp.md) |
+| Project | Focus | Maturity (summary) | Public case study |
+|---|---|---|---|
+| **The Master Key** | Human-governed AI orchestration | Implemented · Tested (targeted) · Prototype demos | [Explore](master-key.md) |
+| **TipFlow** | Financial software for tipped workers | Implemented prototype · Planned public demo | [Explore](tipflow.md) |
+| **Bubba Bucks** | Quantitative research infrastructure | Implemented · research checkpoint | [Explore](bubba-bucks.md) |
+| **TourneyNest** | Sports-family planning architecture | Architecture prototype | [Explore](tourneynest.md) |
+| **ApplyForge** | Local-first application workflow tools | Concept / docs reviewed | [Explore](applyforge.md) |
+| **Merriwisp** | Additional project under review | Planned public overview | [Explore](merriwisp.md) |
 
 ## How to evaluate this portfolio
 

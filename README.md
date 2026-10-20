@@ -26,15 +26,21 @@ I'm interested in remote opportunities in **AI implementation, workflow automati
 
 > **My philosophy:** Make the system ambitious. Make the claims precise. Make the results verifiable.
 
-## 🎯 Recruiter fast track — AI implementation & technical customer success
+## 🎯 Recruiter fast track — three hiring tracks
 
-**[▶ START THE GUIDED PORTFOLIO DEMO](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** · **Role-specific pages:** [AI Implementation](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation-careers/) · [Automation Operations](https://ashtoncodes316.github.io/AshtonCodes316/automation-operations/) · [Technical Customer Success](https://ashtoncodes316.github.io/AshtonCodes316/technical-customer-success/)
+**[▶ START THE GUIDED PORTFOLIO DEMO](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)**
+
+| Track | Open |
+|---|---|
+| **A. AI Orchestration / Agentic Systems** | [Landing page](https://ashtoncodes316.github.io/AshtonCodes316/ai-orchestration/) |
+| **B. AI Automation / Solutions Engineering** | [Landing page](https://ashtoncodes316.github.io/AshtonCodes316/ai-automation/) |
+| **C. AI-Native Application Development** | [Landing page](https://ashtoncodes316.github.io/AshtonCodes316/ai-native-apps/) |
+
+Prior tracks remain available: [AI Implementation](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation-careers/) · [Automation Operations](https://ashtoncodes316.github.io/AshtonCodes316/automation-operations/) · [Technical Customer Success](https://ashtoncodes316.github.io/AshtonCodes316/technical-customer-success/)
 
 *The guided demo is an interactive browser presentation, not a recorded video or live AI worker.*
 
-
-
-I am studying **Computer Information Systems** and bring hands-on **customer service, sales, and business operations** experience to AI-assisted workflow projects. I am pursuing U.S.-remote, early-career opportunities in **AI enablement, automation operations, SaaS onboarding, implementation, and technical customer success**.
+I am studying **Computer Information Systems** and bring hands-on **customer service, sales, and business operations** experience to AI-assisted workflow and product projects. I am pursuing U.S.-remote, early-career opportunities in **AI orchestration, automation/solutions engineering, AI-native application development, implementation, and technical customer success**.
 
 **[INTERACTIVE AI IMPLEMENTATION CASE STUDY →](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation/)** · [Detailed engineering notes](docs/ai-implementation-case-study.md)
 
@@ -66,19 +72,19 @@ A system designed to coordinate AI roles, models, tools, missions, approvals, an
 
 **Verified local checkpoint (Oct. 12, 2026):** 146 security and 174 domain/persistence test executions passed; one skipped. Results used five test-only corrections in an isolated worktree, not the pristine commit or full suite. [Scope and limitations](docs/master-key.md) · [Evidence index](docs/evidence.md).
 
-**Status:** In development. Private source; no claim of a production autonomous workforce. Sanitized demonstrations planned.
+**Status labels:** **Implemented** (architecture + private system) · **Tested** (targeted local checkpoints) · **Prototype** (public demos) · **Planned** (sanitized full-suite publication). No production autonomous workforce claimed.
 
 ---
 
 ### 💸 [TipFlow — financial software for tipped workers](docs/tipflow.md)
 
-**A financial operating-system concept for people who earn tips.**
+**A financial operating-system prototype for people who earn tips.**
 
-Explores software and workflows designed around the financial realities of tipped work.
+Local Streamlit application iterated through a modular V8 architecture (shifts, goals, finance views, forecasting helpers, reports) on SQLite. Designed around irregular tipped income rather than fixed salaries.
 
-**Engineering themes:** financial product design · user-centered workflows · practical business software.
+**Engineering themes:** financial product design · Streamlit UI · SQLite persistence · modular Python packaging.
 
-**Status:** In development. Feature-level demonstrations pending verification.
+**Status labels:** **Implemented** (local prototype) · **Prototype** (not production) · **Planned** (public hosted demo / verified screenshots). No customers, revenue, or cloud deployment claimed.
 
 ---
 
@@ -92,7 +98,7 @@ Documented research workflows include universes/watchlists, historical data requ
 
 **Safety boundary:** Research and observation only. No live trading, profitability claims, or autonomous trade execution.
 
-**Status:** Research infrastructure in development.
+**Status labels:** **Implemented** (research tooling concepts) · **Tested** (project-local tooling; public artifact pending) · **Prototype** (research only; no live trading).
 
 ---
 
