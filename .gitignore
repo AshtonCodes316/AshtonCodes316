@@ -1,0 +1,4 @@
+browser-evidence/
+__pycache__/
+*.pyc
+.DS_Store
