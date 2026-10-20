@@ -29,6 +29,9 @@ PAGES = {
     "ai-implementation-careers": "ai-implementation-careers/",
     "automation-operations": "automation-operations/",
     "technical-customer-success": "technical-customer-success/",
+    "ai-orchestration": "ai-orchestration/",
+    "ai-automation": "ai-automation/",
+    "ai-native-apps": "ai-native-apps/",
 }
 VIEWPORTS = {"desktop": (1440, 900), "mobile": (390, 844)}
 
@@ -118,7 +121,8 @@ def main():
                         assert "01 / 06" in page.locator("#number").inner_text(), "Keyboard left arrow failed"
                         assert page.locator("#progress").get_attribute("aria-valuenow") == "1", "Progress reset failed"
                     if name in {"guided-demo", "ai-implementation", "ai-implementation-careers",
-                                "automation-operations", "technical-customer-success"}:
+                                "automation-operations", "technical-customer-success",
+                                "ai-orchestration", "ai-automation", "ai-native-apps"}:
                         # Minimum touch target dimensions for visible interactive controls.
                         # Record undersized targets for manual review rather than treating
                         # dense inline text links as a proven WCAG failure.
@@ -136,7 +140,9 @@ def main():
                         page.locator('[data-step="4"]').click()
                         assert page.locator('[data-step="4"]').get_attribute("aria-pressed") == "true", "Architecture selection failed"
                         assert "Human quality evaluation" in page.locator("#detail-title").inner_text(), "Quality explanation missing"
-                    if name in {"ai-implementation-careers", "automation-operations", "technical-customer-success"}:
+                    if name in {"ai-implementation-careers", "automation-operations",
+                                "technical-customer-success", "ai-orchestration",
+                                "ai-automation", "ai-native-apps"}:
                         assert page.locator("h1").count() == 1, "Recruiter page must have one main heading"
                         assert page.locator('a[href="../guided-demo/"]').count() >= 1, "Guided demo entry missing"
                     for href in page.locator("a[href]").evaluate_all(
@@ -154,7 +160,8 @@ def main():
                     # Accessibility smoke checks on the newly published recruiter experiences.
                     # These do not replace WCAG audits or screen-reader testing.
                     if name in {"guided-demo", "ai-implementation", "ai-implementation-careers",
-                                "automation-operations", "technical-customer-success"}:
+                                "automation-operations", "technical-customer-success",
+                                "ai-orchestration", "ai-automation", "ai-native-apps"}:
                         accessibility = page.evaluate("""() => {
                           const visible = e => !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
                           const name = e => (e.getAttribute('aria-label') ||

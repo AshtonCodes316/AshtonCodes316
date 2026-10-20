@@ -11,6 +11,14 @@
 
 **[Guided six-chapter portfolio demo](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** — interactive browser presentation, not a video.
 
+### Primary hiring tracks (October 2026)
+
+- [A · AI Orchestration / Agentic Systems](https://ashtoncodes316.github.io/AshtonCodes316/ai-orchestration/) — missions, agent boundaries, approvals, evidence.
+- [B · AI Automation / Solutions Engineering](https://ashtoncodes316.github.io/AshtonCodes316/ai-automation/) — workflow design, handoffs, exception handling.
+- [C · AI-Native Application Development](https://ashtoncodes316.github.io/AshtonCodes316/ai-native-apps/) — TipFlow and product prototypes with maturity labels.
+
+### Prior tracks (still maintained)
+
 - [AI Implementation](https://ashtoncodes316.github.io/AshtonCodes316/ai-implementation-careers/) — AI task design, qualification, output evaluation.
 - [Automation Operations](https://ashtoncodes316.github.io/AshtonCodes316/automation-operations/) — operational handoffs, exceptions, documentation.
 - [Technical Customer Success](https://ashtoncodes316.github.io/AshtonCodes316/technical-customer-success/) — onboarding, troubleshooting, communication.
