@@ -30,12 +30,14 @@ section{padding:34px 0}
 .card p{color:var(--muted)}.card h3{margin:6px 0 10px}
 /* .badge layout may remain below; colors from brand-tokens.css */
 
-.table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.95rem}
+.table-scroll{width:100%;margin-top:12px}
+.table-scroll:focus-visible{outline:3px solid var(--mint);outline-offset:4px}
+.table{width:100%;border-collapse:collapse;font-size:.95rem}
 .table th,.table td{text-align:left;padding:12px 10px;border-bottom:1px solid #35516a;vertical-align:top}
 .table th{color:var(--mint);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
 .notice{padding:18px 22px;border-left:4px solid var(--mint);background:#153140;border-radius:0 10px 10px 0;color:#d4ebeb}
 footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding:42px 0 24px}.table{display:block;overflow-x:auto}}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding:42px 0 24px}.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}}
 @media(max-width:600px){nav a,.links a,.card a,footer a,main p a{display:inline-block;padding:8px 4px;min-height:44px}.btn{display:block;text-align:center;margin:8px 0}}
 /* prefers-reduced-motion + prefers-contrast: brand-tokens.css */
 </style>
@@ -110,6 +112,7 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <section aria-labelledby="labels">
 <div class="eyebrow">Recruiter decoding guide</div>
 <h2 id="labels">Maturity vocabulary used across this portfolio</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="labels">
 <table class="table">
 <thead><tr><th>Label</th><th>Meaning</th><th>Example here</th></tr></thead>
 <tbody>
@@ -119,6 +122,7 @@ footer{border-top:1px solid #39516b;padding:32px 0 60px;color:var(--muted)}
 <tr><td><strong>Planned</strong></td><td>Next milestone only—no capability claimed yet</td><td>Public TipFlow screenshots; Merriwisp overview</td></tr>
 </tbody>
 </table>
+</div>
 </section>
 
 <section>
