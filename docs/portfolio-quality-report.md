@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
-**Updated:** October 17, 2026  
-**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** at commit `66ec237c` (October 17, 2026). Keyboard-navigation and touch-target evidence collection were subsequently added; their new run is pending. Manual accessibility and physical-device verification remain outstanding.
+**Updated:** October 19, 2026  
+**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** historically through commit `06c6a173` / related October 17 runs. **MISSION GITHUB-GODTIER-002** added three recruiter tracks and upgraded the guided demo. **Local Playwright capture (this machine, Oct 19, 2026):** `python scripts/capture_portfolio.py` → **32 screenshots, 0 failures**; new-track mobile touch-target JSONs were empty (`[]`). A fresh CI run on `main` after Founder-approved push is still required before claiming GitHub Actions verification for the new pages. Manual accessibility and physical-device verification remain outstanding.
 
 ## What the existing browser suite checks
 
@@ -63,8 +63,11 @@ The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10
 - [AI implementation recruiter page](ai-implementation-careers/)
 - [Automation operations recruiter page](automation-operations/)
 - [Technical customer success recruiter page](technical-customer-success/)
+- [AI Orchestration / Agentic Systems](ai-orchestration/) — added Oct 19, 2026 (local; CI pending push)
+- [AI Automation / Solutions Engineering](ai-automation/) — added Oct 19, 2026 (local; CI pending push)
+- [AI-Native Application Development](ai-native-apps/) — added Oct 19, 2026 (local; CI pending push)
 
-Existing pages remain in the same suite. The case-study hub assertion was updated from three to four sections after a fourth case study was added.
+Existing pages remain in the same suite. The case-study hub assertion was updated from three to four sections after a fourth case study was added. The screenshot runner (`scripts/capture_portfolio.py`) now enumerates the three new tracks for HTTP, overflow, broken-link, touch-target, and accessibility smoke checks.
 
 ## How to verify
 
