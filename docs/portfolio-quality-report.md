@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
-**Updated:** October 19, 2026  
-**Status:** Browser suite, axe-core audit, and GitHub Pages deployment **PASS** historically through commit `06c6a173` / related October 17 runs. **MISSION GITHUB-GODTIER-002** added three recruiter tracks and upgraded the guided demo. **MISSION GITHUB-GODTIER-003 (MUSE-BRAND-002):** consolidated accent token to `#74ecc5`, standardized maturity badges (`Implemented` / `Tested` / `Prototype` / `Planned`), removed AI-native-apps blue badge accent, and shared `prefers-contrast` / `prefers-reduced-motion` via `docs/assets/brand-tokens.css`. **Local Playwright capture after brand consolidation:** `python scripts/capture_portfolio.py` → **32 screenshots, 0 failures**; touch-target JSONs empty (`[]`). A fresh CI run on `main` after Founder-approved push is still required. Manual accessibility and physical-device verification remain outstanding.
+**Updated:** October 26, 2026  
+**Verified public CI checkpoint:** [Browser/screenshots/accessibility workflow](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519609) and [GitHub Pages deployment](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519251) both **passed** on October 20, 2026 at commit `10360381` (merged recruiter experience launch). This replaces the earlier "CI pending push" status for the October 19 recruiter-track/brand changes. Subsequent documentation-only edits require their own run/status checks; see [current Actions history](https://github.com/AshtonCodes316/AshtonCodes316/actions). **Manual contrast/ARIA review, physical-device verification, and independent live-site comparison remain outstanding.** Historical local Playwright evidence (32 screenshots, zero reported failures) is not a substitute for a current CI artifact or a physical-device test.
 
 ## What the existing browser suite checks
 
@@ -36,7 +36,7 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 
 ## Keyboard and mobile target evidence
 
-The browser test suite now exercises the guided demo with actual ArrowRight and ArrowLeft key presses while the tour is focused, checks that its accessible progress value updates, and records visible mobile links/buttons smaller than 24 pixels in either dimension to per-page JSON files. **This evidence collection does not by itself establish a WCAG touch-target failure**: spacing and exceptions require human review. The newly expanded suite has not yet been verified passing.
+The browser test suite now exercises the guided demo with actual ArrowRight and ArrowLeft key presses while the tour is focused, checks that its accessible progress value updates, and records visible mobile links/buttons smaller than 24 pixels in either dimension to per-page JSON files. **This evidence collection does not by itself establish a WCAG touch-target failure**: spacing and exceptions require human review. The expanded suite was subsequently verified by the passing October 20, 2026 browser workflow at commit `10360381`; this does not replace manual keyboard-only review of every interactive component.
 
 ## Actual mobile artifact review — October 17, 2026
 
@@ -63,9 +63,9 @@ The `scripts/audit_portfolio_accessibility.py` runner loads pinned axe-core 4.10
 - [AI implementation recruiter page](ai-implementation-careers/)
 - [Automation operations recruiter page](automation-operations/)
 - [Technical customer success recruiter page](technical-customer-success/)
-- [AI Orchestration / Agentic Systems](ai-orchestration/) — added Oct 19, 2026 (local; CI pending push)
-- [AI Automation / Solutions Engineering](ai-automation/) — added Oct 19, 2026 (local; CI pending push)
-- [AI-Native Application Development](ai-native-apps/) — added Oct 19, 2026 (local; CI pending push)
+- [AI Orchestration / Agentic Systems](ai-orchestration/) — added Oct 19, 2026 (included in Oct 20 public CI checkpoint)
+- [AI Automation / Solutions Engineering](ai-automation/) — added Oct 19, 2026 (included in Oct 20 public CI checkpoint)
+- [AI-Native Application Development](ai-native-apps/) — added Oct 19, 2026 (included in Oct 20 public CI checkpoint)
 
 Existing pages remain in the same suite. The case-study hub assertion was updated from three to four sections after a fourth case study was added. The screenshot runner (`scripts/capture_portfolio.py`) now enumerates the three new tracks for HTTP, overflow, broken-link, touch-target, and accessibility smoke checks.
 
@@ -83,7 +83,8 @@ Existing pages remain in the same suite. The case-study hub assertion was update
 - [x] Confirm a completed, passing GitHub Actions browser-suite run (a3b19d3c).
 - [x] Confirm a passing run of the newly added axe-core audit (`ba268edf`).
 - [ ] Review mobile and desktop screenshots for clipping and readability.
-- [ ] Confirm new guided-demo keyboard automation passes, then manually test keyboard-only navigation across all new pages.
+- [x] Confirm expanded guided-demo keyboard automation passes in the October 20 public browser workflow.
+- [ ] Manually test keyboard-only navigation across all new pages.
 - [x] Resolve the blocking guided-tour ARIA violation and confirm the automated audit passes.
 - [ ] Review any incomplete/manual-review items in the axe evidence artifact.
 - [ ] Review mobile touch-target JSON evidence and assess WCAG spacing/exceptions.
@@ -93,4 +94,4 @@ Existing pages remain in the same suite. The case-study hub assertion was update
 
 ## Evidence boundaries
 
-This quality report describes **test coverage and verification work**, not an independently verified passing run. The public demos are browser-only educational simulations; private Master Key AI worker qualifications are separate, self-reported engineering evidence.
+This quality report links **specific passing GitHub Actions runs** for the public portfolio. Those runs establish only the configured automated checks at the cited commits, not independent security certification, full WCAG conformance, live AI integration, or physical-device performance. Private Master Key qualifications remain separate self-reported engineering evidence. The public demos are browser-only educational simulations; private Master Key AI worker qualifications are separate, self-reported engineering evidence.
