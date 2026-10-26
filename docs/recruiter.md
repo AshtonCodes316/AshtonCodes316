@@ -5,7 +5,7 @@
 [**Public portfolio landing page**](index.html) · [GitHub profile](../README.md) · [Project portfolio](portfolio.md) · [Project status](project-status.md) · [Application-ready descriptions](application-kit.md)
 
 
-**[Portfolio quality verification report](portfolio-quality-report.md)** — automated browser, mobile layout, interaction, broken-link and accessibility smoke-check coverage. Latest passing CI run is not yet independently confirmed.
+**[Portfolio quality verification report](portfolio-quality-report.md)** — automated browser, mobile layout, interaction, broken-link and accessibility smoke-check coverage. **Dated verification (October 20, 2026):** [browser workflow passed](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519609) and [GitHub Pages deployment passed](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519251) for commit `10360381`. These checks cover the public portfolio, not production readiness; consult [current Actions history](https://github.com/AshtonCodes316/AshtonCodes316/actions) for newer commits.
 
 ## Choose a recruiter experience
 
