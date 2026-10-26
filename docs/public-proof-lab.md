@@ -10,7 +10,7 @@ python3 -m unittest discover -v
 python3 demo.py
 ```
 
-The four existing tests cover approval requirements, fail-closed behavior when no worker is available, deterministic receipt hashing, and the guarantee that the demo never calls a real worker.
+The public `test_demo.py` currently defines **10 `unittest` test methods**. They cover approval requirements and denial precedence; fail-closed behavior without an available worker; all four boolean approval/availability combinations; deterministic and canonical SHA-256 receipt hashing; distinct decision receipts; confirmation that no real worker is called; and a fixed fictional mission. These are tests of a small educational simulation, **not** tests of private MK or a live AI service.
 
 ## CI evidence
 
