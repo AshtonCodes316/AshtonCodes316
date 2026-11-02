@@ -142,19 +142,19 @@ A public landing page featuring browser-only workflow simulations and linked eng
 
 [**🚀 TRY THE LIVE AUTOMATION LAB →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/) · [Source and limitations](docs/automation-lab/README.md)
 
-Explore approval gates, blocked workflows, draft preparation, and a local JSON evidence receipt. This is a **static, rule-based educational demo**, not a live AI integration. GitHub Pages is enabled; the founder confirmed the live page opened and the approval-gate scenarios worked on October 12, 2026. No independent browser verification has been performed.
+Explore approval gates, blocked workflows, draft preparation, and a local JSON evidence receipt. This is a **static, rule-based educational demo**, not a live AI integration. GitHub Pages is enabled; the founder confirmed the live page opened and the approval-gate scenarios worked on October 12, 2026. Automated Chromium CI now checks this page's rendering, runtime errors, overflow, and internal links; the founder-reported approval scenario has not been independently re-tested end to end.
 
 ## 🧩 Interactive customer onboarding workflow
 
 [**TRY WORKFLOW STUDIO →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [Source and honest limitations](docs/workflow-studio/README.md)
 
-A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Founder-reported check (Oct. 12, 2026):** The live page opened and the readiness/handoff walkthrough worked. No independent browser test was performed.
+A second browser-only prototype: fictional onboarding intake, readiness validation, blockers, simulated owner assignment, human sign-off, and downloadable JSON receipts. **Founder-reported check (Oct. 12, 2026):** The live page opened and the readiness/handoff walkthrough worked. Automated Chromium CI checks page loading and basic site quality; the founder-reported readiness/handoff scenario has not been independently re-tested end to end.
 
 ## 📊 Implementation Dashboard — interactive demo
 
 [**TRY THE IMPLEMENTATION DASHBOARD →**](https://ashtoncodes316.github.io/AshtonCodes316/implementation-dashboard/) · [How it works and limitations](docs/implementation-dashboard/README.md)
 
-A third browser-only portfolio prototype for fictional customer implementation milestones, blockers, owner assignment, and simulated go-live approvals. **Founder-reported smoke test (Oct. 12, 2026):** The live dashboard opened and the guided milestone and approval flow worked. No independent browser verification was performed.
+A third browser-only portfolio prototype for fictional customer implementation milestones, blockers, owner assignment, and simulated go-live approvals. **Founder-reported smoke test (Oct. 12, 2026):** The live dashboard opened and the guided milestone and approval flow worked. Automated Chromium CI checks page loading and basic site quality; the founder-reported milestone/approval scenario has not been independently re-tested end to end.
 
 ## 💼 AI automation for real business workflows
 
