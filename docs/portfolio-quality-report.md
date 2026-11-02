@@ -1,7 +1,7 @@
 # Portfolio Quality Report — automated verification scope
 
-**Updated:** October 26, 2026  
-**Verified public CI checkpoint:** [Browser/screenshots/accessibility workflow](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519609) and [GitHub Pages deployment](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519251) both **passed** on October 20, 2026 at commit `10360381` (merged recruiter experience launch). This replaces the earlier "CI pending push" status for the October 19 recruiter-track/brand changes. Subsequent documentation-only edits require their own run/status checks; see [current Actions history](https://github.com/AshtonCodes316/AshtonCodes316/actions). **Manual contrast/ARIA review, physical-device verification, and independent live-site comparison remain outstanding.** Historical local Playwright evidence (32 screenshots, zero reported failures) is not a substitute for a current CI artifact or a physical-device test.
+**Reviewed:** November 2, 2026  
+**Most recent verified pre-review public CI checkpoint:** [Browser/screenshots/axe accessibility workflow PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/40346362393) and [GitHub Pages deployment PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/40346363236) on **October 26, 2026**, commit `d3b87529`. This is a dated checkpoint, not a claim that subsequent commits have passed; check [current Actions history](https://github.com/AshtonCodes316/AshtonCodes316/actions). The Python browser runner enumerates **16 pages** at desktop and mobile viewport sizes. **Manual contrast/ARIA review, physical-device testing, screen-reader assessment, and independent live-site comparison remain outstanding.** The browser workflow checks the checked-out local site and does not independently prove every simulated scenario or private-project capability.
 
 ## What the existing browser suite checks
 
@@ -9,14 +9,14 @@ The portfolio already uses a Python/Playwright screenshot runner (`scripts/captu
 
 | Check | Coverage | Current evidence status |
 |---|---|---|
-| Render screenshots | 1440 × 900 desktop; 390 × 844 mobile | Automated; successful run confirmed at commit a3b19d3c |
-| HTTP response | Each enumerated page must return HTTP 200 | Automated; successful run confirmed at commit a3b19d3c |
-| JavaScript runtime errors | Browser `pageerror` capture | Automated; successful run confirmed at commit a3b19d3c |
-| Horizontal overflow | Document scroll width versus viewport width | Automated; successful run confirmed at commit a3b19d3c |
-| Internal broken links | HTTP status for same-origin links on enumerated pages | Automated; successful run confirmed at commit a3b19d3c |
-| Interactive tour | Next, previous, restart, last-chapter stop | Automated; successful run confirmed at commit a3b19d3c |
-| AI case-study architecture | Five stages, selection and explanation | Automated; successful run confirmed at commit a3b19d3c |
-| Recruiter landing pages | One H1, guided-demo navigation | Automated; successful run confirmed at commit a3b19d3c |
+| Render screenshots | 1440 × 900 desktop; 390 × 844 mobile | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| HTTP response | Each enumerated page must return HTTP 200 | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| JavaScript runtime errors | Browser `pageerror` capture | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| Horizontal overflow | Document scroll width versus viewport width | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| Internal broken links | HTTP status for same-origin links on enumerated pages | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| Interactive tour | Next, previous, restart, last-chapter stop | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| AI case-study architecture | Five stages, selection and explanation | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
+| Recruiter landing pages | One H1, guided-demo navigation | Automated; latest pre-review PASS at commit d3b87529 (Oct 26) |
 | Accessibility smoke checks | Named visible links/buttons, image alt presence, duplicate IDs, exactly one H1 and main | Automated for five new experiences; successful run confirmed at commit a3b19d3c |
 
 **Scope:** These are basic programmatic checks, not a comprehensive WCAG 2.2 AA audit. They do not establish screen-reader compatibility, keyboard usability for every widget, color contrast compliance, real-device performance, or cross-browser support.
