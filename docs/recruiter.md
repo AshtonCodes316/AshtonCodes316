@@ -7,6 +7,19 @@
 
 **[Portfolio quality verification report](portfolio-quality-report.md)** — automated browser, mobile layout, interaction, broken-link and accessibility smoke-check coverage. **Dated verification (October 20, 2026):** [browser workflow passed](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519609) and [GitHub Pages deployment passed](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/39378519251) for commit `10360381`. These checks cover the public portfolio, not production readiness; consult [current Actions history](https://github.com/AshtonCodes316/AshtonCodes316/actions) for newer commits.
 
+## 60-second evidence-first review
+
+**Best fit:** Early-career AI implementation, automation/solutions support, technical customer success, and technical operations. My customer-facing business operations background complements public Python workflow examples; these are **career targets, not prior engineering job titles**.
+
+1. **Try a workflow:** [Control Room approval/rejection simulation](control-room/) — fictional browser-only experience, no real AI worker.
+2. **Inspect working code:** [Governance example](../examples/mk-governance/README.md) and [its CI](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/public-proof.yml) — ten public test methods, not the private MK runtime.
+3. **See implementation thinking:** [Onboarding simulator case study](implementation-simulator-case-study.md), [runnable source](../examples/implementation-simulator/README.md), and [its CI](https://github.com/AshtonCodes316/AshtonCodes316/actions/workflows/implementation-simulator.yml) — fictional scenarios, no customer deployment.
+4. **Understand engineering judgment:** [Local AI qualification case study](ai-implementation-case-study.md) — a private, self-reported integration checkpoint where code-review quality failed despite passing technical tests.
+
+[What is demo-ready and what remains unverified](demo-readiness.md) · [90-second recording script (video not yet produced)](90-second-walkthrough.md)
+
+**Dated public site verification:** [Browser/accessibility workflow PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/40346362393) and [Pages deployment PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/40346363236) on **October 26, 2026**, commit `d3b87529`. See [current runs](https://github.com/AshtonCodes316/AshtonCodes316/actions) for later changes; automated checks do not certify production security, real-device accessibility, or private project claims.
+
 ## Choose a recruiter experience
 
 **[Guided six-chapter portfolio demo](https://ashtoncodes316.github.io/AshtonCodes316/guided-demo/)** — interactive browser presentation, not a video.
@@ -68,11 +81,11 @@ I combine business operations and customer-facing management experience with han
 
 ## Try a small interactive prototype
 
-[**Try Automation Lab live →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/) · [Source, instructions, and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests. The founder confirmed the page and approval tests worked; no independent browser test has been performed.
+[**Try Automation Lab live →**](https://ashtoncodes316.github.io/AshtonCodes316/automation-lab/) · [Source, instructions, and limits](automation-lab/README.md). This standalone example uses local rules and fictional support requests. The founder confirmed the page and approval tests worked; automated browser CI checks page rendering and basic site quality, but the founder-reported approval flow has not been independently re-tested end to end.
 
 ## Second interactive portfolio example
 
-[**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; the founder reported the live page and guided workflow worked on October 12, 2026; independent testing remains pending.
+[**Workflow Studio — Customer onboarding simulator →**](https://ashtoncodes316.github.io/AshtonCodes316/workflow-studio/) · [What it does and does not prove](workflow-studio/README.md). Browser-only, fictional-data prototype; the founder reported the live page and guided workflow worked on October 12, 2026; automated browser CI checks page rendering and basic site quality; the founder-reported workflow scenario has not been independently re-tested end to end.
 
 ## Implementation Dashboard — third interactive example
 
