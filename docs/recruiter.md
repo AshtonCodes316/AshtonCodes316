@@ -18,7 +18,7 @@
 
 [What is demo-ready and what remains unverified](demo-readiness.md) · [90-second recording script (video not yet produced)](90-second-walkthrough.md)
 
-**Latest confirmed public site verification (checked November 9, 2026):** [Browser/accessibility workflow PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/41475571274) and [Pages deployment PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/41475569988) on **November 2, 2026**, commit `a52266e7`. These are dated checks, not a claim of live production readiness or independent verification of private-project results. See [current runs](https://github.com/AshtonCodes316/AshtonCodes316/actions) for newer changes; manual contrast/ARIA, screen-reader, and physical-device testing remain outstanding.
+**Latest confirmed public site verification (checked November 16, 2026):** [Browser/accessibility workflow PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/42645557828) and [Pages deployment PASS](https://github.com/AshtonCodes316/AshtonCodes316/actions/runs/42645555222) on **November 9, 2026**, commit `855dd67c`. These are dated checks, not a claim of live production readiness or independent verification of private-project results. See [current runs](https://github.com/AshtonCodes316/AshtonCodes316/actions) for newer changes; manual contrast/ARIA, screen-reader, and physical-device testing remain outstanding.
 
 ## Choose a recruiter experience
 
